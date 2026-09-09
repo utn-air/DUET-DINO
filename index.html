@@ -24,7 +24,7 @@
 <a class="skip-link" href="#main">Skip to content</a>
 <main id="main">
   <section class="hero container" id="teaser" aria-labelledby="paper-title">
-    <h1 id="paper-title"><img class="method-logo" src="static/images/duet.png" width="1254" height="1254" alt=""><span class="title-text"><strong>DUET-DINO:</strong> Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation</span></h1>
+    <h1 id="paper-title"><span class="title-brand"><img class="method-logo" src="static/images/duet.png" width="1254" height="1254" alt=""><strong>DUET-DINO</strong></span> <span class="title-text">Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation</span></h1>
     <p class="authors"><a href="https://scholar.google.de/citations?hl=en&amp;user=wFKpaUsAAAAJ" target="_blank" rel="noopener">Nisarga Nilavadi</a><sup>1</sup>, <a href="https://ralfroemer.com/" target="_blank" rel="noopener">Ralf Römer</a><sup>2</sup>, <a href="https://mbreuss.github.io/" target="_blank" rel="noopener">Moritz Reuss</a><sup>3,4</sup>, <a href="https://scholar.google.com/citations?hl=en&amp;user=dmIZWm4AAAAJ" target="_blank" rel="noopener">Michael Krawez</a><sup>1</sup>, <a href="https://scholar.google.com/citations?user=sZWmnMsAAAAJ&amp;hl=de" target="_blank" rel="noopener">Tobias Jülg</a><sup>1</sup>,<br class="desktop-break"> <a href="https://scholar.google.ca/citations?user=QMfeRz0AAAAJ" target="_blank" rel="noopener">Angela P. Schoellig</a><sup>2,5</sup>, <a href="https://rudolf.intuitive-robots.net/" target="_blank" rel="noopener">Rudolf Lioutikov</a><sup>3,5</sup>, <a href="https://scholar.google.ca/citations?hl=en&amp;user=zj6FavAAAAAJ" target="_blank" rel="noopener">Wolfram Burgard</a><sup>1,5</sup></p>
     <p class="affiliations"><span><sup>1</sup> University of Technology Nuremberg</span><span><sup>2</sup> Technical University of Munich</span><span><sup>3</sup> Karlsruhe Institute of Technology</span><span><sup>4</sup> NVIDIA</span><span><sup>5</sup> Robotics Institute Germany</span></p>
     <div class="publication-links">
@@ -40,7 +40,7 @@
     <div class="container">
       <article class="method-part">
         <h2>Architecture and Training of DUET-DINO</h2>
-        <figure class="paper-figure"><iframe class="paper-pdf" src="static/figures/DUET-DINO.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=Fit" title="DUET-DINO architecture with side and wrist encoders, cross-attention, and action-conditioned predictors" style="aspect-ratio: 854 / 299;" loading="lazy"></iframe></figure>
+        <figure class="paper-figure"><img src="static/figures/DUET-DINO.svg" alt="DUET-DINO architecture with side and wrist encoders, cross-attention, and action-conditioned predictors" loading="lazy"></figure>
         <p class="figure-description">The pretrained encoder maps side- and wrist-view observations into latent space. Cross-attention blocks condition each view on complementary information from the other view in the latent space. The view-specific predictor heads then predict future latents conditioned on the action and end-effector state. The dual-view prediction loss combines the teacher-forcing loss computed over all one-step predictions in the clip with an autoregressive loss over the K-step rollout predictions.</p>
       </article>
     </div>
@@ -50,7 +50,7 @@
     <div class="container">
       <article class="method-part">
         <h2>Latent Planning in Robot Manipulation</h2>
-        <figure class="paper-figure"><iframe class="paper-pdf" src="static/figures/LatentPlanning3.pdf#toolbar=0&amp;navpanes=0&amp;scrollbar=0&amp;view=Fit" title="Zero-shot latent planning pipeline using side and wrist goal images" style="aspect-ratio: 822 / 285.96;" loading="lazy"></iframe></figure>
+        <figure class="paper-figure"><img src="static/figures/LatentPlanning3.svg" alt="Zero-shot latent planning pipeline using side and wrist goal images" loading="lazy"></figure>
         <p class="figure-description">Overview of the proposed simultaneous cross-view world modeling method, showing predicted dual-view latent rollouts, CEM action planning using predicted and goal latents, and the normalized dual-view planning cost.</p>
       </article>
     </div>

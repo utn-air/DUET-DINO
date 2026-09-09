@@ -41,6 +41,7 @@ sup { font-size: .65em; }
 .hero { padding: 96px 0 64px; text-align: center; }
 #paper-title {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: .3em;
@@ -51,8 +52,9 @@ sup { font-size: .65em; }
   letter-spacing: -.025em;
   line-height: 1.23;
 }
-#paper-title strong { font-weight: 700; }
-.title-text { min-width: 0; }
+#paper-title strong { font-size: 1.35em; font-weight: 700; }
+.title-brand { display: flex; align-items: center; justify-content: center; gap: .3em; white-space: nowrap; }
+.title-text { display: block; min-width: 0; }
 .method-logo { width: 3.6em; height: 3.6em; flex-shrink: 0; object-fit: contain; }
 .authors { margin-top: 27px; font-size: 20px; line-height: 1.9; }
 .authors sup, .affiliations sup { font-size: .8em; line-height: 0; }
@@ -114,7 +116,7 @@ a.button.is-dark:active { background: #125384; }
 .method-part > h2 { text-align: center; }
 .method-part > p { text-align: justify; }
 .paper-figure { margin-top: 26px; }
-.paper-pdf { display: block; width: 100%; border: 0; background: #fff; }
+.paper-figure img { width: 100%; height: auto; }
 .figure-description {
   max-width: 900px;
   margin: 16px auto 0;
