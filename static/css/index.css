@@ -52,10 +52,12 @@ sup { font-size: .65em; }
   letter-spacing: -.025em;
   line-height: 1.23;
 }
-#paper-title strong { font-size: 1.35em; font-weight: 700; }
-#paper-title .title-brand { display: inline-flex; flex-flow: row nowrap; align-items: center; justify-content: center; gap: .3em; white-space: nowrap; }
+#paper-title strong { font-size: 1.35em; font-weight: 700; line-height: 1; }
+#paper-title .title-brand { display: inline-flex; flex-flow: row nowrap; align-items: baseline; justify-content: center; gap: .3em; white-space: nowrap; }
 .title-text { display: block; min-width: 0; }
-.method-logo { width: 3.6em; height: 3.6em; flex-shrink: 0; object-fit: contain; }
+/* Trim transparent vertical padding in layout while preserving the logo scale. */
+.method-logo-frame { display: block; width: 3.6em; aspect-ratio: 1507 / 993; flex-shrink: 0; overflow: hidden; }
+.method-logo { width: 100%; height: auto; transform: translateY(-1.82%); }
 .authors { margin-top: 27px; font-size: 20px; line-height: 1.9; }
 .authors sup, .affiliations sup { font-size: .8em; line-height: 0; }
 .affiliations {
@@ -154,7 +156,7 @@ footer p { font-size: 12px; color: var(--muted); }
   .container { width: calc(100% - 32px); }
   .section { padding: 46px 0; }
   #paper-title { font-size: 28px; line-height: 1.25; }
-  .method-logo { width: 2.3em; height: 2.3em; }
+  .method-logo-frame { width: 2.3em; }
   .hero { padding-top: 68px; padding-bottom: 46px; }
   .authors { margin-top: 21px; font-size: 17px; }
   .desktop-break { display: none; }
