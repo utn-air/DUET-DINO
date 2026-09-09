@@ -115,7 +115,7 @@ a.button.is-dark:active { background: #125384; }
   .teaser-slide { flex-basis: 100%; }
   .carousel-arrow { width: 28px; height: 38px; font-size: 28px; }
 }
-.teaser-summary { max-width: 870px; margin: 16px auto 0; font-size: clamp(20px, 2.5vw, 26px); font-weight: 600; line-height: 1.45; text-align: center; }
+.teaser-summary { max-width: 870px; margin: 16px auto 0; font-size: clamp(20px, 2.5vw, 26px); font-weight: 400; line-height: 1.45; text-align: center; }
 
 .abstract-section, .overview-section, .results-section {
   background: var(--tint);
