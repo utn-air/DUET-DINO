@@ -13,7 +13,7 @@ Open http://localhost:8000. Native video controls, figure links, and expandable 
 
 ## Page organization
 
-The narrative follows `.cache/DUET-DINO.pptx`: the full 7-DoF planning challenge; cross-view world-model training; zero-shot latent planning; reach; angled reach; visual shifts; hardware; angled grasp-and-lift; and latent-dynamics/patch-correspondence analysis. The page uses a conventional academic layout: a full paper title and authors, the official teaser figure, the manuscript abstract, method figures, plain result tables, and task-specific videos. There are no promotional slogans, oversized statistic tiles, branded sticky navigation, or resource cards. A plain success-rate summary table precedes the detailed experiments.
+The narrative follows `.cache/DUET-DINO.pptx`: the full 7-DoF planning challenge; cross-view world-model training; zero-shot latent planning; reach; angled reach; visual shifts; hardware; angled grasp-and-lift; and latent-dynamics/patch-correspondence analysis. The page uses a conventional academic layout: a full paper title and authors, a six-rollout teaser, the manuscript abstract, method figures, plain result tables, and task-specific videos. Subtle white and slate section bands, thin rules, and consistent spacing follow the restrained organization of the ProbEx project page. There are no promotional slogans, oversized statistic tiles, branded sticky navigation, or resource cards. A plain success-rate summary table precedes the detailed experiments.
 
 Each experiment includes its protocol, quantitative results, and qualitative evidence. Reach and angled-reach tables include all paper baselines and final errors, not only the three DINOv3 models in the summary table. Hardware and visual-shift tables include position and orientation errors. The lift table distinguishes angled-reach-stage and lift-stage success; their tolerances differ from the standalone angled-reach task.
 
@@ -23,7 +23,7 @@ Only uncommented `includegraphics` references reachable through `main.tex` and i
 
 | Active TeX source | Original asset | Page use |
 | --- | --- | --- |
-| `2_introduction.tex` | `figures/DUET-DINO-COVER.png` | Planning challenge / Figure 1 |
+| `2_introduction.tex` | `figures/DUET-DINO-COVER.png` | Retained official Figure 1 source; replaced in the page hero by the rollout teaser |
 | `4_method.tex` | `figures/DUET-DINO.pdf` | Training architecture / Figure 2 |
 | `5_experiments.tex` | `figures/LatentPlanning3.pdf` | Latent planning / Figure 3 |
 | `5_experiments.tex` | `figures/breakfast_table_reach_tasks.png` | Reach setup / Figure 4 |
@@ -36,6 +36,7 @@ PDFs are displayed as SVGs with outlined text and embedded image content. PNGs a
 
 `static/media/manifest.json` records source archive members/cache paths and processing for every deployed clip.
 
+- The side-camera-only hero teaser combines separate strong DUET-DINO reach, angled-reach, lemon-lift, bottle-lift, artist-workshop, and wooden-lounge rollouts. Four have successful evaluation logs; the two lift clips have null per-episode labels and were selected for visibly retained grasps.
 - Coffee-pot comparisons come from slide 18: `media3.mp4` (DUET-DINO), `media2.mp4` (DINOv3 independent dual-view), and `media4.mp4` (V-JEPA 2 side-view).
 - Drill comparisons come from slide 19: `media5.mp4` (DUET-DINO), `media6.mp4` (DINOv3 independent dual-view), and `media7.mp4` (V-JEPA 2 wrist-view).
 - Ketchup comparisons come from slide 21: `media11.mp4` (DUET-DINO), `media12.mp4` (DINOv3 independent dual-view), and `media13.mp4` (DINOv3 wrist-only).
@@ -47,15 +48,15 @@ Selected videos illustrate behavior and are not aggregate success estimates. Edi
 
 ## Editing and release links
 
-- `index.html`: paper header and abstract, complete result tables, citations, figure/video links, and resource placeholders.
+- `index.html`: paper header and abstract, complete result tables, figure/video links, and resource placeholders.
 - `static/css/index.css`: responsive layout and styles.
-- `static/js/index.js`: opt-in group video controls and citation copying.
-- `static/pdfs/duet-dino.pdf`: manuscript copied from the locally ignored `DUET-DINO.pdf`.
+- `static/js/index.js`: teaser motion preferences and group video controls.
+- The Paper button currently points to the placeholder URL `https://arxiv.org/`; replace it with the paper's final arXiv abstract or PDF URL when available.
 
-The Code and Hugging Face checkpoint buttons intentionally say **Coming soon**. When URLs are available, replace the two disabled buttons with anchors (remove `disabled`, `placeholder`, and the badges). The citation is a manuscript `@misc`; update it when public publication metadata exists.
+The Code and Hugging Face checkpoint buttons intentionally say **TBD**. When URLs are available, replace the two disabled buttons with anchors (remove `disabled`, `placeholder`, and the badges). BibTeX remains marked **Coming soon** until verified publication metadata is available.
 
 When changing results, update the summary and task-specific HTML tables. No external scripts, fonts, analytics, or `.cache` paths are required at runtime. Each comparison has play/pause controls; all videos also have native controls.
 
 ## Credits
 
-Adapted from [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template) and [Nerfies](https://nerfies.github.io/), with a video-led presentation inspired by [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/). Website design is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); paper and research assets retain their respective rights.
+Adapted from [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template) and [Nerfies](https://nerfies.github.io/), with section organization inspired by [ProbEx](https://horwitz.ai/probex) and a video-led presentation inspired by [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/). Website design is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/); paper and research assets retain their respective rights.

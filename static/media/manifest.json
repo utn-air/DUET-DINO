@@ -1,5 +1,36 @@
 [
   {
+    "asset": "static/media/teaser-collage.mp4",
+    "poster": "static/media/teaser-collage.jpg",
+    "sources": [
+      {
+        "source": ".cache/output_reach/dual_dinov3.zip::ReachPitcher_0.mp4",
+        "selection": "successful log; final_step 16"
+      },
+      {
+        "source": ".cache/output_angledreach/dual_dinov3_angledreach.zip::AngledReachCartoon2_5.mp4",
+        "selection": "successful log; final_step 17"
+      },
+      {
+        "source": ".cache/output_angledpickup/dual_dinov3_angledpickup.zip::AngledPickupLemon_0.mp4",
+        "selection": "visibly retained grasp; per-episode success is null"
+      },
+      {
+        "source": ".cache/output_angledpickup/dual_dinov3_angledpickup.zip::AngledPickupSoftScrubBottle_6.mp4",
+        "selection": "visibly retained grasp; per-episode success is null"
+      },
+      {
+        "source": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachDrillObjects4Task_bg_artist_workshop/AngledReachDrill_0.mp4",
+        "selection": "successful log; final_step 64"
+      },
+      {
+        "source": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachDrillObjects4Task_bg_wooden_lounge/AngledReachDrill_0.mp4",
+        "selection": "successful log; final_step 57"
+      }
+    ],
+    "processing": "Six-panel 3 x 2 collage using only the side-camera view from each rollout; wrist-camera views are omitted. Reach and angled-reach streams are slowed 4x and all streams loop to a common 8.4 s duration. H.264, 1200 x 448, 20 fps, no audio. Playback does not represent planning latency."
+  },
+  {
     "asset": "static/media/distractors.mp4",
     "source": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachDrillObjects5Task_bg_cabin/AngledReachDrill_0.mp4",
     "log": {
