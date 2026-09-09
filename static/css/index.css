@@ -40,6 +40,10 @@ sup { font-size: .65em; }
 
 .hero { padding: 76px 0 64px; text-align: center; }
 #paper-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .3em;
   max-width: 980px;
   margin: 0 auto;
   font-size: 39px;
@@ -48,9 +52,8 @@ sup { font-size: .65em; }
   line-height: 1.23;
 }
 #paper-title strong { font-weight: 700; }
-.title-brand { display: flex; align-items: center; justify-content: center; gap: .2em; margin-bottom: .25em; white-space: nowrap; }
-.title-subtitle { display: block; }
-.method-logo { width: 1.65em; height: 1.65em; flex-shrink: 0; object-fit: contain; }
+.title-text { min-width: 0; }
+.method-logo { width: 2.8em; height: 2.8em; flex-shrink: 0; object-fit: contain; }
 .authors { margin-top: 27px; font-size: 20px; line-height: 1.9; }
 .authors sup, .affiliations sup { font-size: .8em; line-height: 0; }
 .affiliations {
@@ -98,6 +101,7 @@ a.button.is-dark:active { background: #125384; }
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
 }
+.overview-section { background: #fff; }
 .abstract-section p { text-align: justify; }
 .method-part + .method-part { margin-top: 52px; }
 .result-feature,
@@ -149,6 +153,7 @@ footer p { font-size: 12px; color: var(--muted); }
   .container { width: calc(100% - 32px); }
   .section { padding: 46px 0; }
   #paper-title { font-size: 28px; line-height: 1.25; }
+  .method-logo { width: 1.8em; height: 1.8em; }
   .hero { padding-top: 56px; padding-bottom: 46px; }
   .authors { margin-top: 21px; font-size: 17px; }
   .desktop-break { display: none; }
