@@ -76,9 +76,9 @@ sup { font-size: .65em; }
   white-space: nowrap;
 }
 .button.is-rounded { padding-inline: 1.25em; border-radius: 9999px; }
-.button.is-dark { border-color: transparent; background: #363636; color: #fff; }
-a.button.is-dark:hover { border-color: transparent; background: #2f2f2f; color: #fff; text-decoration: none; }
-a.button.is-dark:active { background: #292929; }
+.button.is-dark { border-color: transparent; background: #363636; color: #fff; transition: background-color .18s ease; }
+a.button.is-dark:hover { border-color: transparent; background: #1768a5; color: #fff; text-decoration: none; }
+a.button.is-dark:active { background: #125384; }
 .icon { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; margin-right: .25em; }
 .ai { display: inline-block; font-family: Academicons; font-size: 20px; font-style: normal; font-weight: 400; line-height: 1; text-rendering: auto; }
 .ai-arxiv::before { content: "\e974"; }
@@ -160,4 +160,5 @@ footer p { font-size: 12px; color: var(--muted); }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+  .button.is-dark { transition: none; }
 }
