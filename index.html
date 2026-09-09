@@ -25,7 +25,7 @@
 <main id="main">
   <section class="hero container" id="teaser" aria-labelledby="paper-title">
     <h1 id="paper-title"><strong>DUET-DINO:</strong> Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation</h1>
-    <p class="authors">Nisarga Nilavadi<sup>1</sup>, Ralf Römer<sup>2</sup>, Moritz Reuss<sup>3,4</sup>, Michael Krawez<sup>1</sup>, Tobias Jülg<sup>1</sup>,<br class="desktop-break"> Angela P. Schoellig<sup>2,5</sup>, Rudolf Lioutikov<sup>3,5</sup>, Wolfram Burgard<sup>1,5</sup></p>
+    <p class="authors"><a href="https://scholar.google.de/citations?hl=en&amp;user=wFKpaUsAAAAJ" target="_blank" rel="noopener">Nisarga Nilavadi</a><sup>1</sup>, Ralf Römer<sup>2</sup>, Moritz Reuss<sup>3,4</sup>, Michael Krawez<sup>1</sup>, Tobias Jülg<sup>1</sup>,<br class="desktop-break"> Angela P. Schoellig<sup>2,5</sup>, Rudolf Lioutikov<sup>3,5</sup>, Wolfram Burgard<sup>1,5</sup></p>
     <p class="affiliations"><span><sup>1</sup> University of Technology Nuremberg</span><span><sup>2</sup> Technical University of Munich</span><span><sup>3</sup> Karlsruhe Institute of Technology</span><span><sup>4</sup> NVIDIA</span><span><sup>5</sup> Robotics Institute Germany</span></p>
     <div class="publication-links">
       <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/" target="_blank" rel="noopener" aria-label="Open arXiv homepage in a new tab; project link TBD"><span class="icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span><span>arXiv</span><span class="tbd">TBD</span></a></span>
@@ -39,12 +39,12 @@
   <section class="section method-section" id="method">
     <div class="container">
       <article class="method-part">
-        <h2>Architecture and training of DUET-DINO</h2>
+        <h2>Architecture and Training of DUET-DINO</h2>
         <figure class="paper-figure"><a href="static/figures/DUET-DINO.pdf" target="_blank" rel="noopener" aria-label="Open the full-resolution DUET-DINO architecture"><img src="static/figures/DUET-DINO.svg" alt="DUET-DINO architecture with side and wrist encoders, cross-attention, and action-conditioned predictors" loading="lazy"></a></figure>
         <h3 class="figure-description">The pretrained encoder maps side- and wrist-view observations into latent space.Cross-attention blocks condition each view on complementary information from the other view in the latent space. The view-specific predictor heads then predict future latents conditioned on the action and end-effector state. The dual-view prediction loss combines the teacher-forcing loss computed over all one-step predictions in the clip with an autoregressive loss over the K-step rollout predictions.</h3>
       </article>
       <article class="method-part">
-        <!-- <h2>Zero-Shot Latent Planning</h2> -->
+        <h2>Latent Planning</h2>
         <figure class="paper-figure"><a href="static/figures/LatentPlanning3.pdf" target="_blank" rel="noopener" aria-label="Open the full-resolution latent planning diagram"><img src="static/figures/LatentPlanning3.svg" alt="Zero-shot latent planning pipeline using side and wrist goal images" loading="lazy"></a></figure>
         <h3 class="figure-description">Overview of the proposed simultaneous cross-view world modeling method, showing predicted dual-view latent rollouts, CEM action planning using predicted and goal latents, and the normalized dual-view planning cost.</h3>
       </article>
