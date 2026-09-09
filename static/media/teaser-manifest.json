@@ -24,11 +24,23 @@
       "label": "Ketchup",
       "file": "teaser-angled-ketchup.mp4",
       "poster": "teaser-angled-ketchup.jpg",
-      "archive_member": "dual_dinov3_angledpickup/AngledPickupKetchupTask/AngledPickupKetchup_0.mp4",
-      "source_sha256": "2f355cb0a3d28c27c501271da662107fcc695b7786cf3f7232033269d0b7ce76",
-      "selection": "Visually reviewed approach, grasp, and lift; success is null in source logs.",
+      "archive_member": "dual_dinov3_angledpickup/AngledPickupKetchupTask/AngledPickupKetchup_5.mp4",
+      "source_sha256": "b253a89de0e1863ed64a6fb4bf5356da542405ada011217fb73bb9b99e9d5c7b",
+      "selection": "Episode 5: visually clearer tilted bottle and retained lift; success is null in source logs.",
       "processing": "Left side-camera crop (640x360), original 15 fps and full duration; H.264 CRF 17; no upscaling or playback speed change.",
       "source_archive": ".cache/output_angledpickup/dual_dinov3_angledpickup.zip"
+    },
+    {
+      "label": "Hardware",
+      "file": "teaser-hardware.mp4",
+      "poster": "teaser-hardware.jpg",
+      "source": "static/media/hardware-duet.mp4",
+      "source_sha256": "52aa467f1a332e8596a3e91e9ce76314eab41cb6fa834dc3f411f5452c99218d",
+      "trim_seconds": {
+        "start": 0,
+        "end": 6
+      },
+      "processing": "First 6 seconds, full 1280x720 frame and original 30 fps retained; H.264 CRF 17, no audio; no playback speed change."
     }
   ]
 }

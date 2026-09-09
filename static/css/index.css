@@ -123,7 +123,7 @@ a.button.is-dark:active { background: #125384; }
   border-bottom: 1px solid var(--rule);
 }
 .overview-section { background: #fff; }
-.results-placeholder { text-align: center; font-size: 20px; color: var(--muted); }
+.section-placeholder { text-align: center; font-size: 20px; color: var(--muted); }
 .abstract-section p { text-align: justify; }
 .method-part + .method-part { margin-top: 52px; }
 .result-feature,
