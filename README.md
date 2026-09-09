@@ -49,9 +49,9 @@ Selected videos illustrate behavior and are not aggregate success estimates. Edi
 - `index.html`: four-section paper narrative, figure/video links, and resource placeholders.
 - `static/css/index.css`: responsive layout and styles.
 - `static/js/index.js`: teaser motion preferences and visibility-aware video pausing.
-- The Paper button currently points to the placeholder URL `https://arxiv.org/`; replace it with the paper's final arXiv abstract or PDF URL when available.
+- The arXiv, Code, and Checkpoints buttons are active placeholders pointing to the arXiv, GitHub, and Hugging Face homepages. All three display **TBD** until project-specific release URLs are available.
 
-The Code and Hugging Face checkpoint buttons intentionally say **TBD**. When URLs are available, replace the two disabled buttons with anchors (remove `disabled`, `placeholder`, and the badges). The footer marks BibTeX as **Coming soon** until verified publication metadata is available.
+When release URLs are available, replace the three service-homepage URLs and remove their `TBD` labels. The footer marks BibTeX as **Coming soon** until verified publication metadata is available.
 
 No external scripts, fonts, analytics, or `.cache` paths are required at runtime. All videos use native controls.
 
