@@ -103,7 +103,8 @@ a.button.is-dark:active { background: #292929; }
   border-top: 1px solid var(--rule);
 }
 .section h2, .section h3 { text-align: center; }
-.method-part > h2 { text-align: left; }
+.method-part > h2 { text-align: center; }
+.method-part > p { text-align: justify; }
 .paper-figure { margin-top: 26px; }
 .paper-figure > a { display: block; }
 .paper-figure img { width: 100%; height: auto; }
