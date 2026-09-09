@@ -1,4 +1,4 @@
-# DUET-DINO project page
+# [DUET-DINO project page](https://utn-air.github.io/DUET-DINO/)
 
 ## Credits
 Adapted from [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template) and [Nerfies](https://nerfies.github.io/) with sections inspired by [ProbEx](https://horwitz.ai/probex) and [Diffusion Policy](https://diffusion-policy.cs.columbia.edu/). 
