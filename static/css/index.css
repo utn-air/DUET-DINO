@@ -51,6 +51,7 @@ sup { font-size: .65em; }
 .title-brand { display: inline-flex; align-items: center; gap: .2em; vertical-align: middle; white-space: nowrap; }
 .method-logo { width: 1.65em; height: 1.65em; flex-shrink: 0; object-fit: contain; }
 .authors { margin-top: 27px; font-size: 20px; line-height: 1.9; }
+.authors sup, .affiliations sup { font-size: .8em; line-height: 0; }
 .affiliations {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +59,7 @@ sup { font-size: .65em; }
   gap: 2px 17px;
   max-width: 860px;
   margin: 12px auto 0;
-  font-size: 16px;
+  font-size: 18px;
   color: #555;
 }
 .publication-links { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 17px; }
@@ -91,7 +92,7 @@ a.button.is-dark:active { background: #125384; }
 .teaser-video { margin-top: 34px; }
 .teaser-video video { width: min(100%, 870px); height: auto; margin-inline: auto; background: #111; }
 
-.abstract-section, .results-section {
+.abstract-section, .overview-section {
   background: var(--tint);
   border-top: 1px solid var(--rule);
   border-bottom: 1px solid var(--rule);
@@ -150,7 +151,7 @@ footer p { font-size: 12px; color: var(--muted); }
   .hero { padding-top: 56px; padding-bottom: 46px; }
   .authors { margin-top: 21px; font-size: 17px; }
   .desktop-break { display: none; }
-  .affiliations { font-size: 14px; gap: 4px 12px; }
+  .affiliations { font-size: 16px; gap: 4px 12px; }
   .publication-links { margin-inline: -5px; }
   .button { font-size: 13px; }
   h2 { font-size: 26px; }

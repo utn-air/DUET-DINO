@@ -13,7 +13,7 @@ Open http://localhost:8000. Native video controls and links to full-resolution f
 
 ## Page organization
 
-The page has four sections: (1) the paper header and side-camera teaser, (2) the manuscript abstract, (3) the DUET-DINO cross-view model and zero-shot latent-planning method, and (4) selected task videos followed by the representation-analysis visuals. It uses subtle white and slate bands, thin rules, and the restrained organization of the ProbEx project page.
+The page has five sections: (1) the paper header and side-camera teaser, (2) the manuscript abstract, (3) DUET-DINO architecture and training, (4) Overview with the latent-planning figure, and (5) selected task videos followed by the representation-analysis visuals. Abstract and Overview use slate backgrounds; the other sections use white. It uses subtle white and slate bands, thin rules, and the restrained organization of the ProbEx project page.
 
 Tables, detailed experiment protocols, ablations, numbered figure captions, and comparison controls are omitted to keep the paper narrative concise. Paper visuals are followed by short explanatory paragraphs.
 
@@ -46,7 +46,7 @@ Selected videos illustrate behavior and are not aggregate success estimates. Edi
 
 ## Editing and release links
 
-- `index.html`: four-section paper narrative, figure/video links, and resource placeholders.
+- `index.html`: five-section paper narrative, figure/video links, and resource placeholders.
 - `static/css/index.css`: responsive layout and styles.
 - `static/js/index.js`: teaser motion preferences and visibility-aware video pausing.
 - The arXiv, Code, and Checkpoints buttons are active placeholders pointing to the arXiv, GitHub, and Hugging Face homepages. All three display **TBD** until project-specific release URLs are available.
