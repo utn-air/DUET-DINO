@@ -70,7 +70,7 @@ sup { font-size: .65em; }
   font-size: 18px;
   color: #555;
 }
-.publication-links { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 17px; }
+.publication-links { display: flex; flex-wrap: wrap; justify-content: center; margin-top: 28px; }
 .link-block a { margin: 5px; }
 .button {
   display: inline-flex;
@@ -97,7 +97,8 @@ a.button.is-dark:active { background: #125384; }
 .huggingface-icon { display: block; width: 20px; height: 20px; object-fit: contain; }
 .tbd { margin-left: .55em; color: rgba(255,255,255,.68); font-size: .72em; }
 .tbd::before { content: "· "; }
-.teaser-video { margin-top: 34px; }
+.teaser-video { margin-top: 46px; }
+.teaser-summary { max-width: 870px; margin: 36px auto 0; font-size: clamp(20px, 2.5vw, 26px); font-weight: 600; line-height: 1.45; text-align: center; }
 .teaser-video video { width: min(100%, 870px); height: auto; margin-inline: auto; background: #111; }
 
 .abstract-section, .overview-section {

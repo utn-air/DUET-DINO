@@ -16,7 +16,7 @@
   <meta name="twitter:description" content="Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation">
   <meta name="twitter:image" content="https://utn-air.github.io/DUET-DINO/static/media/social-preview.jpg">
   <link rel="icon" href="static/images/duet.png" type="image/svg+xml">
-  <link rel="stylesheet" href="static/css/index.css?v=method-scale-6">
+  <link rel="stylesheet" href="static/css/index.css?v=teaser-spacing-8">
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/index.js"></script>
 </head>
@@ -33,6 +33,7 @@
       <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://huggingface.co/" target="_blank" rel="noopener" aria-label="Open Hugging Face homepage in a new tab; project checkpoints TBD"><span class="icon" aria-hidden="true"><img class="huggingface-icon" src="static/images/hugging-face.svg" alt=""></span><span>Checkpoints</span><span class="tbd">TBD</span></a></span>
     </div>
     <figure class="teaser-video"><video autoplay muted loop playsinline controls preload="metadata" poster="static/media/teaser-collage.jpg" aria-label="DUET-DINO teaser showing reach, angled reach, lift, and visual-shift rollouts"><source src="static/media/teaser-collage.mp4" type="video/mp4"></video></figure>
+    <p class="teaser-summary">DUET-DINO enables planning over full 7-DoF end-effector actions for fine-grained manipulation control</p>
   </section>
   <section class="section abstract-section" id="abstract"><div class="container reading-width"><h2>Abstract</h2><p>Action-conditioned latent world models predict future visual representations, enabling zero-shot goal-conditioned robot planning and control. However, their predictions for fine-grained spatial and rotational actions are unreliable for full 7-DoF end-effector control. To address this gap, we introduce DUET-DINO, a simultaneous cross-view latent world model that jointly learns action-conditioned predictions from static side- and wrist-camera observations through cross-view conditioning. By exploiting complementary global scene and gripper-centric information, DUET-DINO enables latent planning over the full 7-DoF action space. Across spatially diverse reach, orientation-intensive angled-reach, and multi-goal grasp-and-lift tasks, DUET-DINO consistently outperforms single-view and independent dual-view baselines, achieving 92% success on reach, 72.5% on angled-reach, and 60.0% on lift tasks. DUET-DINO is trained from scratch on DROID and RoboArena datasets and generalizes robustly under visual distribution shifts. We further show that while V-JEPA 2 wrist-view predictions underestimate visual dynamics induced by fine-grained actions, DINOv3 predictions better capture action-conditioned scene changes, leading to stronger downstream planning.</p></div></section>
 
