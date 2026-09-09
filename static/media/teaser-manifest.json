@@ -1,0 +1,34 @@
+{
+  "clips": [
+    {
+      "label": "Coffee-pot reach",
+      "file": "teaser-coffee.mp4",
+      "poster": "teaser-coffee.jpg",
+      "source_archive": ".cache/DUET-DINO.pptx",
+      "archive_member": "ppt/media/media3.mp4",
+      "source_sha256": "ff5b72374a90ca4de4911afa6b9dbd46526bef901f2081ba09b5f93a5baf2c75",
+      "model": "DUET-DINO",
+      "processing": "Left side-camera crop (640x360), original 15 fps and full duration; H.264 CRF 17; no upscaling or playback speed change."
+    },
+    {
+      "label": "Angled drill reach",
+      "file": "teaser-drill.mp4",
+      "poster": "teaser-drill.jpg",
+      "source_archive": ".cache/DUET-DINO.pptx",
+      "archive_member": "ppt/media/media5.mp4",
+      "source_sha256": "1fbd974ba22cfc9abb75dabea5c8a0fec48145e53164a1a1c1256c9158bbcb97",
+      "model": "DUET-DINO",
+      "processing": "Left side-camera crop (640x360), original 15 fps and full duration; H.264 CRF 17; no upscaling or playback speed change."
+    },
+    {
+      "label": "Ketchup",
+      "file": "teaser-angled-ketchup.mp4",
+      "poster": "teaser-angled-ketchup.jpg",
+      "archive_member": "dual_dinov3_angledpickup/AngledPickupKetchupTask/AngledPickupKetchup_0.mp4",
+      "source_sha256": "2f355cb0a3d28c27c501271da662107fcc695b7786cf3f7232033269d0b7ce76",
+      "selection": "Visually reviewed approach, grasp, and lift; success is null in source logs.",
+      "processing": "Left side-camera crop (640x360), original 15 fps and full duration; H.264 CRF 17; no upscaling or playback speed change.",
+      "source_archive": ".cache/output_angledpickup/dual_dinov3_angledpickup.zip"
+    }
+  ]
+}
