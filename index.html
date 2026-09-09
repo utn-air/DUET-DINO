@@ -49,51 +49,13 @@
   <section class="section overview-section" id="overview">
     <div class="container">
       <article class="method-part">
-        <h2>Overview</h2>
+        <h2>Latent Planning in Robot Manipulation</h2>
         <figure class="paper-figure"><a href="static/figures/LatentPlanning3.pdf" target="_blank" rel="noopener" aria-label="Open the full-resolution latent planning diagram"><img src="static/figures/LatentPlanning3.svg" alt="Zero-shot latent planning pipeline using side and wrist goal images" loading="lazy"></a></figure>
         <p class="figure-description">Overview of the proposed simultaneous cross-view world modeling method, showing predicted dual-view latent rollouts, CEM action planning using predicted and goal latents, and the normalized dual-view planning cost.</p>
       </article>
     </div>
   </section>
 
-  <section class="section results-section" id="results">
-    <div class="container">
-      <h2>Results</h2>
-
-      <div class="task-grid">
-        <article class="task-card">
-          <video muted loop playsinline controls preload="none" poster="static/media/coffee-duet.jpg" aria-label="DUET-DINO reaching toward a coffee pot"><source src="static/media/coffee-duet.mp4" type="video/mp4"></video>
-          <p><strong>Reach.</strong> Goal-conditioned reaching toward the coffee pot.</p>
-        </article>
-        <article class="task-card">
-          <video muted loop playsinline controls preload="none" poster="static/media/drill-duet.jpg" aria-label="DUET-DINO angled reaching toward a drill"><source src="static/media/drill-duet.mp4" type="video/mp4"></video>
-          <p><strong>Angled reach.</strong> Coordinated translation and end-effector rotation toward the drill.</p>
-        </article>
-        <article class="task-card">
-          <video muted loop playsinline controls preload="none" poster="static/media/ketchup-duet.jpg" aria-label="DUET-DINO grasping and lifting a ketchup bottle"><source src="static/media/ketchup-duet.mp4" type="video/mp4"></video>
-          <p><strong>Grasp and lift.</strong> Angled approach, grasp, and lift of the ketchup bottle.</p>
-        </article>
-      </div>
-
-      <article class="result-feature">
-        <video muted loop playsinline controls preload="none" poster="static/media/distractors.jpg" aria-label="DUET-DINO under background changes and tabletop distractors"><source src="static/media/distractors.mp4" type="video/mp4"></video>
-        <p><strong>Visual shifts.</strong> DUET-DINO plans with changed backgrounds and additional tabletop distractors.</p>
-      </article>
-
-      <article class="result-feature hardware-feature">
-        <video muted loop playsinline controls preload="none" poster="static/media/hardware-duet.jpg" aria-label="DUET-DINO on the physical robot"><source src="static/media/hardware-duet.mp4" type="video/mp4"></video>
-        <p><strong>Hardware.</strong> The same latent-planning approach running on the physical robot.</p>
-      </article>
-
-      <div class="representation-analysis">
-        <h3>Representation Analysis</h3>
-        <figure class="paper-figure"><a href="static/figures/dinov3_vjepa_emb_analysis.pdf" target="_blank" rel="noopener" aria-label="Open the full-resolution latent dynamics analysis"><img src="static/figures/dinov3_vjepa_emb_analysis.svg" alt="Comparison of DINOv3 and V-JEPA 2 latent changes over an angled-reach episode" loading="lazy"></a></figure>
-        <p class="figure-description">DINOv3 predictions follow the temporal pattern of the observed latent changes, while V-JEPA 2 wrist-view predictions underestimate changes caused by fine-grained actions.</p>
-        <figure class="paper-figure"><a href="static/figures/QualitativeResults.pdf" target="_blank" rel="noopener" aria-label="Open the full-resolution patch correspondence analysis"><img src="static/figures/QualitativeResults.svg" alt="DINOv3 and V-JEPA 2 patch correspondence visualizations" loading="lazy"></a></figure>
-        <p class="figure-description">Patch-distance maps show that DINOv3 preserves more spatially coherent correspondences around the manipulated object in its predicted next-frame representation.</p>
-      </div>
-    </div>
-  </section>
 </main>
 <footer class="container"><p class="footer-citation"><strong>BibTeX:</strong> Coming soon.</p><p>Page adapted from the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template">Academic Project Page Template</a> and <a href="https://nerfies.github.io/">Nerfies</a>. Website design: <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p></footer>
 </body>
