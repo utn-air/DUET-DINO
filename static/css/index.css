@@ -48,6 +48,8 @@ sup { font-size: .65em; }
   line-height: 1.23;
 }
 #paper-title strong { font-weight: 700; }
+.title-brand { display: inline-flex; align-items: center; gap: .2em; vertical-align: middle; white-space: nowrap; }
+.method-logo { width: 1.65em; height: 1.65em; flex-shrink: 0; object-fit: contain; }
 .authors { margin-top: 27px; font-size: 20px; line-height: 1.9; }
 .affiliations {
   display: flex;
