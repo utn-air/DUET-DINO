@@ -16,9 +16,9 @@
   <meta name="twitter:description" content="Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation">
   <meta name="twitter:image" content="https://utn-air.github.io/DUET-DINO/static/media/social-preview.jpg">
   <link rel="icon" href="static/images/duet.png" type="image/svg+xml">
-  <link rel="stylesheet" href="static/css/index.css?v=teaser-spacing-8">
+  <link rel="stylesheet" href="static/css/index.css?v=angled-carousel-9">
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/index.js?v=angled-carousel-1"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -32,7 +32,30 @@
       <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://github.com/" target="_blank" rel="noopener" aria-label="Open GitHub homepage in a new tab; project code TBD"><span class="icon" aria-hidden="true"><i class="fab fa-github"></i></span><span>Code</span><span class="tbd">TBD</span></a></span>
       <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://huggingface.co/" target="_blank" rel="noopener" aria-label="Open Hugging Face homepage in a new tab; project checkpoints TBD"><span class="icon" aria-hidden="true"><img class="huggingface-icon" src="static/images/hugging-face.svg" alt=""></span><span>Checkpoints</span><span class="tbd">TBD</span></a></span>
     </div>
-    <figure class="teaser-video"><video autoplay muted loop playsinline controls preload="metadata" poster="static/media/teaser-collage.jpg" aria-label="DUET-DINO teaser showing reach, angled reach, lift, and visual-shift rollouts"><source src="static/media/teaser-collage.mp4" type="video/mp4"></video></figure>
+    <div class="teaser-carousel" role="region" aria-roledescription="carousel" aria-label="DUET-DINO angled grasp-and-lift demonstrations">
+      <div class="teaser-carousel-row">
+        <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous demonstration" aria-controls="teaser-track" hidden><span aria-hidden="true">&#8249;</span></button>
+        <div class="teaser-track" id="teaser-track" tabindex="0" aria-label="Demonstration videos; scroll to browse">
+          <figure class="teaser-slide">
+            <video muted loop playsinline controls preload="metadata" poster="static/media/teaser-angled-ketchup.jpg" aria-label="DUET-DINO angled grasp and lift: ketchup"><source src="static/media/teaser-angled-ketchup.mp4" type="video/mp4"></video>
+            <figcaption>Ketchup</figcaption>
+          </figure>
+          <figure class="teaser-slide">
+            <video muted loop playsinline controls preload="metadata" poster="static/media/teaser-angled-lemon.jpg?v=episode-2" aria-label="DUET-DINO angled grasp and lift: lemon"><source src="static/media/teaser-angled-lemon.mp4?v=episode-2" type="video/mp4"></video>
+            <figcaption>Lemon</figcaption>
+          </figure>
+          <figure class="teaser-slide">
+            <video muted loop playsinline controls preload="metadata" poster="static/media/teaser-angled-lizard.jpg" aria-label="DUET-DINO angled grasp and lift: lizard figurine"><source src="static/media/teaser-angled-lizard.mp4?v=6seconds" type="video/mp4"></video>
+            <figcaption>Lizard figurine</figcaption>
+          </figure>
+        </div>
+        <button class="carousel-arrow carousel-next" type="button" aria-label="Next demonstration" aria-controls="teaser-track" hidden><span aria-hidden="true">&#8250;</span></button>
+      </div>
+      <div class="carousel-controls" hidden>
+        <span class="carousel-status" aria-live="polite" aria-atomic="true"></span>
+        <button class="carousel-playback" type="button">Pause videos</button>
+      </div>
+    </div>
     <p class="teaser-summary">DUET-DINO enables fine-grained robot control through full 7-DoF end-effector action planning.</p>
   </section>
   <section class="section abstract-section" id="abstract"><div class="container reading-width"><h2>Abstract</h2><p>Action-conditioned latent world models predict future visual representations, enabling zero-shot goal-conditioned robot planning and control. However, their predictions for fine-grained spatial and rotational actions are unreliable for full 7-DoF end-effector control. To address this gap, we introduce DUET-DINO, a simultaneous cross-view latent world model that jointly learns action-conditioned predictions from static side- and wrist-camera observations through cross-view conditioning. By exploiting complementary global scene and gripper-centric information, DUET-DINO enables latent planning over the full 7-DoF action space. Across spatially diverse reach, orientation-intensive angled-reach, and multi-goal grasp-and-lift tasks, DUET-DINO consistently outperforms single-view and independent dual-view baselines, achieving 92% success on reach, 72.5% on angled-reach, and 60.0% on lift tasks. DUET-DINO is trained from scratch on DROID and RoboArena datasets and generalizes robustly under visual distribution shifts. We further show that while V-JEPA 2 wrist-view predictions underestimate visual dynamics induced by fine-grained actions, DINOv3 predictions better capture action-conditioned scene changes, leading to stronger downstream planning.</p></div></section>
