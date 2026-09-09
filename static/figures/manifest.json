@@ -1,0 +1,50 @@
+[
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "active_tex_file": "2_introduction.tex",
+    "source_member": "figures/DUET-DINO-COVER.png",
+    "original": "static/figures/DUET-DINO-COVER.png",
+    "web_asset": "static/figures/DUET-DINO-COVER.webp",
+    "processing": "Lossless WebP at original dimensions for web display; original PNG retained."
+  },
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "active_tex_file": "4_method.tex",
+    "source_member": "figures/DUET-DINO.pdf",
+    "original": "static/figures/DUET-DINO.pdf",
+    "web_asset": "static/figures/DUET-DINO.svg",
+    "processing": "PDF converted to SVG with text outlined; original PDF retained."
+  },
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "active_tex_file": "5_experiments.tex",
+    "source_member": "figures/LatentPlanning3.pdf",
+    "original": "static/figures/LatentPlanning3.pdf",
+    "web_asset": "static/figures/LatentPlanning3.svg",
+    "processing": "PDF converted to SVG with text outlined; original PDF retained."
+  },
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "active_tex_file": "5_experiments.tex",
+    "source_member": "figures/breakfast_table_reach_tasks.png",
+    "original": "static/figures/breakfast_table_reach_tasks.png",
+    "web_asset": "static/figures/breakfast_table_reach_tasks.webp",
+    "processing": "Lossless WebP at original dimensions for web display; original PNG retained."
+  },
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "active_tex_file": "5_experiments.tex",
+    "source_member": "figures/dinov3_vjepa_emb_analysis.pdf",
+    "original": "static/figures/dinov3_vjepa_emb_analysis.pdf",
+    "web_asset": "static/figures/dinov3_vjepa_emb_analysis.svg",
+    "processing": "PDF converted to SVG with text outlined; original PDF retained."
+  },
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "active_tex_file": "5_experiments.tex",
+    "source_member": "figures/QualitativeResults.pdf",
+    "original": "static/figures/QualitativeResults.pdf",
+    "web_asset": "static/figures/QualitativeResults.svg",
+    "processing": "PDF converted to SVG with text outlined; original PDF retained."
+  }
+]

@@ -1,0 +1,116 @@
+[
+  {
+    "asset": "static/media/distractors.mp4",
+    "source": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachDrillObjects5Task_bg_cabin/AngledReachDrill_0.mp4",
+    "log": {
+      "schema_version": 2,
+      "dt": 0.06666666666666667,
+      "task": "AngledReachDrillTask",
+      "env_id": 0,
+      "run": 0,
+      "success": true,
+      "final_step": 56,
+      "events": []
+    },
+    "processing": "H.264, 720 px wide, 20 fps, no audio; original playback timing retained. Side (top) and wrist (bottom) views rearranged vertically without removing either view; final frame 360 \u00d7 404."
+  },
+  {
+    "asset": "static/media/hardware-duet.mp4",
+    "source": ".cache/hw_edited/duetdino-dinal.MP4",
+    "log": null,
+    "processing": "H.264, 1280 \u00d7 720, original 30 fps and edited playback timing retained, no audio. Full edited sequence; no cropping or rearrangement."
+  },
+  {
+    "asset": "static/media/hardware-independent.mp4",
+    "source": ".cache/hw_edited/ind-dino-final.MP4",
+    "log": null,
+    "processing": "H.264, 1280 \u00d7 720, original 30 fps and edited playback timing retained, no audio. Full edited sequence; no cropping or rearrangement."
+  },
+  {
+    "asset": "static/media/hardware-wrist-only.mp4",
+    "source": ".cache/hw_edited/wrist-final.MP4",
+    "log": null,
+    "processing": "H.264, 1280 \u00d7 720, original 30 fps and edited playback timing retained, no audio. Full edited sequence; no cropping or rearrangement."
+  },
+  {
+    "asset": "static/media/coffee-duet.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media3.mp4",
+    "slide": 18,
+    "model": "DUET-DINO",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/coffee-independent.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media2.mp4",
+    "slide": 18,
+    "model": "DINOv3 independent dual-view",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/coffee-vjepa.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media4.mp4",
+    "slide": 18,
+    "model": "V-JEPA 2 side-view",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/drill-duet.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media5.mp4",
+    "slide": 19,
+    "model": "DUET-DINO",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/drill-independent.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media6.mp4",
+    "slide": 19,
+    "model": "DINOv3 independent dual-view",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/drill-vjepa.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media7.mp4",
+    "slide": 19,
+    "model": "V-JEPA 2 wrist-view",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/ketchup-duet.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media11.mp4",
+    "slide": 21,
+    "model": "DUET-DINO",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/ketchup-independent.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media12.mp4",
+    "slide": 21,
+    "model": "DINOv3 independent dual-view",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  },
+  {
+    "asset": "static/media/ketchup-wrist.mp4",
+    "source": ".cache/DUET-DINO.pptx::ppt/media/media13.mp4",
+    "slide": 21,
+    "model": "DINOv3 wrist-only",
+    "label_mapping": "Matched video shape coordinates to adjacent model text on the slide.",
+    "processing": "H.264, 480 \u00d7 540, original frame rate and edited timing retained; no audio. Both full camera views retained and rearranged: side above, wrist below.",
+    "log": null
+  }
+]
