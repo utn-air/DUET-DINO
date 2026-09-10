@@ -5,4 +5,6 @@ Adapted from [Academic Project Page Template](https://github.com/eliahuhorwitz/A
 
 ## License
 Website design is licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
-`ReachBagelTask` follows the orange-carton group using episode 0 from the same three model archives. VJEPA 2-AC* and DUET-DINO are logged successful (✅); Side-view VJEPA 2 is unlabeled (❗). Each task has its own blue strip attached to its three scrolling videos. The spatial-reach manifest lists both task groups.
+`ReachBagelTask` follows the orange-carton group using episode 0 from the same three model archives. VJEPA 2-AC* and DUET-DINO are logged successful (✅); Side-view VJEPA 2 is unlabeled (❗). Each video has its own light-blue object-name label. The spatial-reach manifest lists both task groups.
+
+`ReachCoffeeCanTask` follows Bagel with episode 0 from the same model archives: ❗ for both unlabeled baseline outcomes and ✅ for logged DUET-DINO success. Coffee Can videos keep their full duration, native global-camera resolution, and bottom-left DUET-DINO wrist inset.

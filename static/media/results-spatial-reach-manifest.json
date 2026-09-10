@@ -135,6 +135,74 @@
           "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with bottom-left wrist inset."
         }
       ]
+    },
+    {
+      "task": "ReachCoffeeCanTask",
+      "clips": [
+        {
+          "model": "VJEPA 2-AC*",
+          "file": "result-reach-coffee-can-official.mp4",
+          "poster": "result-reach-coffee-can-official.jpg",
+          "source_archive": ".cache/output_reach/left_vjepa_official.zip",
+          "archive_member": "right_vjepa/ReachCoffeeCanTask/ReachCoffeeCan_0.mp4",
+          "source_sha256": "ab6aa4ffcdfdc19bfbea5e2abb75d995c978cf4a73f7ce5fb510dac1f85004c7",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachCoffeeCanTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
+        },
+        {
+          "model": "Side-view VJEPA 2",
+          "file": "result-reach-coffee-can-side.mp4",
+          "poster": "result-reach-coffee-can-side.jpg",
+          "source_archive": ".cache/output_reach/right_vjepa.zip",
+          "archive_member": "right_vjepa/ReachCoffeeCanTask/ReachCoffeeCan_0.mp4",
+          "source_sha256": "dd5c97f4694e001fa3bc033390d328d32eeb917f7e292fc40a3d58be3e05aa4f",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachCoffeeCanTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-reach-coffee-can-duet.mp4",
+          "poster": "result-reach-coffee-can-duet.jpg",
+          "source_archive": ".cache/output_reach/dual_dinov3.zip",
+          "archive_member": "dual_dinov3/ReachCoffeeCanTask/ReachCoffeeCan_0.mp4",
+          "source_sha256": "611e281bc44fdaa8eeba6a8d7fd52fea261724c5f2a45751896d088376324419",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachCoffeeCanTask",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 45,
+            "events": []
+          },
+          "display_status": "success",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with bottom-left wrist inset."
+        }
+      ]
     }
   ]
 }
