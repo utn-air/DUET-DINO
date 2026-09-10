@@ -224,7 +224,7 @@
         </figure>
         <figure>
           <img src="static/figures/QualitativeResults.svg" alt="DINOv3 and V-JEPA 2 qualitative patch correspondences across observed frames, encoder features, and predicted features" loading="lazy" width="726" height="314">
-          <p class="figure-description">Patch-wise latent distances for DINOv3 and V-JEPA 2 feature maps. Lower <em>l</em><sub>1</sub> distances indicate greater similarity to the selected reference patch. Frames at <em>t</em> and <em>t</em> + 1 are shown after resizing to the respective encoder inputs. Feature maps are visualized at 14 &times; 14 for DINOv3 and 16 &times; 16 for V-JEPA 2. DINOv3 produces 196 patches of 1280 dimensions, whereas V-JEPA 2 produces 256 patches of 1408 dimensions.</p>
+          <p class="figure-description">Patch-wise latent distances for DINOv3 and V-JEPA 2 feature maps. Lower <em>l</em><sub>1</sub> distances indicate greater similarity to the selected reference patch. Frames at <em>t</em> and <em>t</em> + 1 are shown after resizing to the respective encoder inputs. Feature maps are visualized at 14 &times; 14 for DINOv3 and 16 &times; 16 for V-JEPA 2. DINOv3 produces 196 patches of 1280 dimensions, whereas V-JEPA 2 produces 256 patches of 1408 dimensions. DINOv3 embeddings show coherent correspondences over semantically related object regions, and its AC-predictor closely preserves the encoded t+1 pattern. In contrast, V-JEPA~2 embedding exhibits noisier correspondences, with predicted low-distance regions also appearing in semantically unrelated areas.</p>
         </figure>
       </div>
     </div>
