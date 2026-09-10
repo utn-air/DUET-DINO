@@ -217,4 +217,24 @@ footer p { font-size: 12px; color: var(--muted); }
 .comparison-video video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #fff; }
 .model-overlay { position: absolute; top: 8px; right: 8px; display: inline-flex; align-items: center; gap: 6px; max-width: calc(100% - 16px); padding: 5px 8px; border-radius: 3px; background: rgba(0, 0, 0, .72); color: #fff; font-size: 13px; font-weight: 600; line-height: 1.3; pointer-events: none; }
 .model-status { width: 17px; height: 17px; flex-shrink: 0; }
-.task-name-bar { margin-top: 6px; padding: 4px 12px; border-radius: 4px; background: #4b83aa; text-align: center; font-size: 18px; font-weight: 500; line-height: 1.5;  color: #fff; }
+.task-name-bar { margin-top: 6px; padding: 4px 12px; border-radius: 4px; background: #e7c46a; text-align: center; font-size: 18px; font-weight: 500; line-height: 1.5;  color: #49380f; }
+
+.results-plots { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; align-items: center; margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--rule); }
+.results-plots figure { min-width: 0; }
+.results-plots img { width: 100%; height: auto; }
+@media (max-width: 640px) {
+  .results-plots { grid-template-columns: 1fr; }
+}
+
+/* Room for a complete three-model comparison on wide screens. */
+.results-section > .container { width: min(1480px, calc(100% - 48px)); }
+.results-carousel .result-slide { flex-basis: calc((100% - 36px) / 3); }
+@media (max-width: 1100px) {
+  .results-carousel .result-slide { flex-basis: calc((100% - 18px) / 2); }
+}
+@media (max-width: 640px) {
+  .results-carousel .result-slide { flex-basis: 100%; }
+}
+@media (max-width: 520px) {
+  .results-section > .container { width: calc(100% - 32px); }
+}

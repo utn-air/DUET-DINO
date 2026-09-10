@@ -8,3 +8,5 @@ Website design is licensed under [CC BY-SA 4.0](https://creativecommons.org/lice
 `ReachBagelTask` follows the orange-carton group using episode 0 from the same three model archives. VJEPA 2-AC* and DUET-DINO are logged successful (✅); Side-view VJEPA 2 is unlabeled (❗). Each video has its own light-blue object-name label. The spatial-reach manifest lists both task groups.
 
 `ReachCoffeeCanTask` follows Bagel with episode 0 from the same model archives: ❗ for both unlabeled baseline outcomes and ✅ for logged DUET-DINO success. Coffee Can videos keep their full duration, native global-camera resolution, and bottom-left DUET-DINO wrist inset.
+
+Below the result carousels, `LatentChanges.svg` and `QualitativeResults.svg` appear side by side (stacked on small screens). They were converted directly from their PDFs in `.cache/DUET_DINO__RAL.zip`; conversion provenance is in `static/figures/results-plots-manifest.json`.

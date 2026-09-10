@@ -1,0 +1,16 @@
+[
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "archive_member": "figures/LatentChanges.pdf",
+    "source_sha256": "196b4141e8ec0ce1af970016471fc95065584375906f56f0d582c02cbd25bbee",
+    "asset": "static/figures/LatentChanges.svg",
+    "conversion": "PyMuPDF 1.26.7 get_svg_image(text_as_path=True); full first and only page, outlined text."
+  },
+  {
+    "source_archive": ".cache/DUET_DINO__RAL.zip",
+    "archive_member": "figures/QualitativeResults.pdf",
+    "source_sha256": "7f6f4c8b9a8823c72c47381ed951f53844c81ebe2cc855bece33750ede9a2be7",
+    "asset": "static/figures/QualitativeResults.svg",
+    "conversion": "PyMuPDF 1.26.7 get_svg_image(text_as_path=True); full first and only page, outlined text."
+  }
+]
