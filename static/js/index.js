@@ -3,7 +3,8 @@ const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 document.querySelectorAll(".teaser-carousel, .results-carousel").forEach(carousel => {
   const videos = [...carousel.querySelectorAll("video")];
   const track = carousel.querySelector(".teaser-track");
-  const slides = [...track.children];
+  const slides = [...track.querySelectorAll(".comparison-video")];
+  if (!slides.length) slides.push(...track.children);
   const previous = carousel.querySelector(".carousel-prev");
   const next = carousel.querySelector(".carousel-next");
   let paused = reducedMotion.matches;
