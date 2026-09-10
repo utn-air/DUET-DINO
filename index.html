@@ -220,11 +220,11 @@
         <h2 id="embeddings-analysis-title">Embeddings Analysis</h2>
         <figure>
           <img src="static/figures/LatentChanges.svg" alt="Side- and wrist-view latent changes comparing encoders, DINOv3 predictors, and V-JEPA 2 predictors across episode transitions" loading="lazy" width="692" height="405">
-          <figcaption>Mean latent changes captured by frozen encoders, DINOv3 action-conditioned predictors, and V-JEPA 2 action-conditioned predictors over 30 runs of an angled-reach task, showing weaker modeling of fine-grained action-conditioned dynamics by the V-JEPA 2 wrist predictor.</figcaption>
+          <p class="figure-description">Mean latent changes captured by frozen encoders, DINOv3 action-conditioned predictors, and V-JEPA 2 action-conditioned predictors over 30 runs of an angled-reach task, showing weaker modeling of fine-grained action-conditioned dynamics by the V-JEPA 2 wrist predictor.</p>
         </figure>
         <figure>
           <img src="static/figures/QualitativeResults.svg" alt="DINOv3 and V-JEPA 2 qualitative patch correspondences across observed frames, encoder features, and predicted features" loading="lazy" width="726" height="314">
-          <figcaption>Patch-wise latent distances for DINOv3 and V-JEPA 2 feature maps. Lower <em>l</em><sub>1</sub> distances indicate greater similarity to the selected reference patch. Frames at <em>t</em> and <em>t</em> + 1 are shown after resizing to the respective encoder inputs. Feature maps are visualized at 14 &times; 14 for DINOv3 and 16 &times; 16 for V-JEPA 2. DINOv3 produces 196 patches of 1280 dimensions, whereas V-JEPA 2 produces 256 patches of 1408 dimensions.</figcaption>
+          <p class="figure-description">Patch-wise latent distances for DINOv3 and V-JEPA 2 feature maps. Lower <em>l</em><sub>1</sub> distances indicate greater similarity to the selected reference patch. Frames at <em>t</em> and <em>t</em> + 1 are shown after resizing to the respective encoder inputs. Feature maps are visualized at 14 &times; 14 for DINOv3 and 16 &times; 16 for V-JEPA 2. DINOv3 produces 196 patches of 1280 dimensions, whereas V-JEPA 2 produces 256 patches of 1408 dimensions.</p>
         </figure>
       </div>
     </div>
@@ -235,11 +235,12 @@
       <div class="bibtex-block">
         <button class="bibtex-copy" type="button" aria-label="Copy BibTeX citation" aria-live="polite" hidden>Copy</button>
         <pre class="bibtex-citation" tabindex="0" aria-label="BibTeX citation; scroll horizontally to read"><code id="bibtex-code">@article{nilavadi2026duetdino,
-  title   = {DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation},
-  author  = {Nisarga Nilavadi and Ralf Römer and Moritz Reuss and Michael Krawez and Tobias Jülg and Angela P. Schoellig and Rudolf Lioutikov and Wolfram Burgard},
-  journal = {arXiv preprint arXiv:2609.10506},
-  year    = {2026}
-}</code></pre>
+          title   = {DUET-DINO: Simultaneous Cross-View World Modeling for Latent Planning in Robot Manipulation},
+          author  = {Nisarga Nilavadi and Ralf Römer and Moritz Reuss and Michael Krawez and Tobias Jülg and Angela P. Schoellig and Rudolf Lioutikov and Wolfram Burgard},
+          journal = {arXiv preprint arXiv:2609.10506},
+          year    = {2026}
+          }
+      </code></pre>
       </div>
     </div>
   </section>
