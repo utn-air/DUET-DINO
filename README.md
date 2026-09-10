@@ -9,4 +9,4 @@ Website design is licensed under [CC BY-SA 4.0](https://creativecommons.org/lice
 
 `ReachCoffeeCanTask` follows Bagel with episode 0 from the same model archives: ❗ for both unlabeled baseline outcomes and ✅ for logged DUET-DINO success. Coffee Can videos keep their full duration, native global-camera resolution, and bottom-left DUET-DINO wrist inset.
 
-Below the result carousels, `LatentChanges.svg` and `QualitativeResults.svg` appear side by side (stacked on small screens). They were converted directly from their PDFs in `.cache/DUET_DINO__RAL.zip`; conversion provenance is in `static/figures/results-plots-manifest.json`.
+Below the result carousels, `LatentChanges.svg` and `QualitativeResults.svg` appear stacked in the white-background Embeddings Analysis section. They were converted directly from their PDFs in `.cache/DUET_DINO__RAL.zip`; conversion provenance is in `static/figures/results-plots-manifest.json`.
