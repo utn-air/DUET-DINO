@@ -71,3 +71,29 @@ resultTabs.forEach((tab, index) => {
     resultTabs[next].focus();
   });
 });
+
+const copyCitation = document.querySelector(".bibtex-copy");
+if (copyCitation) {
+  copyCitation.hidden = false;
+  let copyReset;
+  copyCitation.addEventListener("click", async () => {
+    clearTimeout(copyReset);
+    try {
+      await navigator.clipboard.writeText(document.getElementById("bibtex-code").textContent);
+      copyCitation.textContent = "Copied!";
+      copyCitation.setAttribute("aria-label", "BibTeX citation copied");
+    } catch {
+      copyCitation.textContent = "Select to copy";
+      copyCitation.setAttribute("aria-label", "Copy unavailable; select the citation to copy manually");
+      const range = document.createRange();
+      range.selectNodeContents(document.getElementById("bibtex-code"));
+      const selection = window.getSelection();
+      selection.removeAllRanges();
+      selection.addRange(range);
+    }
+    copyReset = setTimeout(() => {
+      copyCitation.textContent = "Copy";
+      copyCitation.setAttribute("aria-label", "Copy BibTeX citation");
+    }, 2500);
+  });
+}
