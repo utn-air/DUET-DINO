@@ -1,68 +1,140 @@
 {
-  "task": "ReachOrangeJuiceCartonTask",
-  "clips": [
+  "tasks": [
     {
-      "model": "VJEPA 2-AC*",
-      "file": "result-reach-orange-carton-official.mp4",
-      "poster": "result-reach-orange-carton-official.jpg",
-      "source_archive": ".cache/output_reach/left_vjepa_official.zip",
-      "archive_member": "right_vjepa/ReachOrangeJuiceCartonTask/ReachOrangeJuiceCarton_0.mp4",
-      "source_sha256": "51c5efa407759850e3f4bafbbe86db93c99706947002ae48a42205c339f3c400",
-      "episode": 0,
-      "log": {
-        "schema_version": 2,
-        "dt": 0.06666666666666667,
-        "task": "ReachOrangeJuiceCartonTask",
-        "env_id": 0,
-        "run": 0,
-        "success": null,
-        "final_step": null,
-        "events": []
-      },
-      "display_status": "unlabeled",
-      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
+      "task": "ReachOrangeJuiceCartonTask",
+      "clips": [
+        {
+          "model": "VJEPA 2-AC*",
+          "file": "result-reach-orange-carton-official.mp4",
+          "poster": "result-reach-orange-carton-official.jpg",
+          "source_archive": ".cache/output_reach/left_vjepa_official.zip",
+          "archive_member": "right_vjepa/ReachOrangeJuiceCartonTask/ReachOrangeJuiceCarton_0.mp4",
+          "source_sha256": "51c5efa407759850e3f4bafbbe86db93c99706947002ae48a42205c339f3c400",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachOrangeJuiceCartonTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
+        },
+        {
+          "model": "Side-view VJEPA 2",
+          "file": "result-reach-orange-carton-side.mp4",
+          "poster": "result-reach-orange-carton-side.jpg",
+          "source_archive": ".cache/output_reach/right_vjepa.zip",
+          "archive_member": "right_vjepa/ReachOrangeJuiceCartonTask/ReachOrangeJuiceCarton_0.mp4",
+          "source_sha256": "434304b182d149b4995d436a9816c89b6d4f88005d675950c594642a6636eee4",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachOrangeJuiceCartonTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-reach-orange-carton-duet.mp4",
+          "poster": "result-reach-orange-carton-duet.jpg",
+          "source_archive": ".cache/output_reach/dual_dinov3.zip",
+          "archive_member": "dual_dinov3/ReachOrangeJuiceCartonTask/ReachOrangeJuiceCarton_0.mp4",
+          "source_sha256": "d297dfd819593490374fde9f9db6578ffa70f74dca43a83057094a320a68b9d6",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachOrangeJuiceCartonTask",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 42,
+            "events": []
+          },
+          "display_status": "success",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with bottom-left wrist inset."
+        }
+      ]
     },
     {
-      "model": "Side-view VJEPA 2",
-      "file": "result-reach-orange-carton-side.mp4",
-      "poster": "result-reach-orange-carton-side.jpg",
-      "source_archive": ".cache/output_reach/right_vjepa.zip",
-      "archive_member": "right_vjepa/ReachOrangeJuiceCartonTask/ReachOrangeJuiceCarton_0.mp4",
-      "source_sha256": "434304b182d149b4995d436a9816c89b6d4f88005d675950c594642a6636eee4",
-      "episode": 0,
-      "log": {
-        "schema_version": 2,
-        "dt": 0.06666666666666667,
-        "task": "ReachOrangeJuiceCartonTask",
-        "env_id": 0,
-        "run": 0,
-        "success": null,
-        "final_step": null,
-        "events": []
-      },
-      "display_status": "unlabeled",
-      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
-    },
-    {
-      "model": "DUET-DINO",
-      "file": "result-reach-orange-carton-duet.mp4",
-      "poster": "result-reach-orange-carton-duet.jpg",
-      "source_archive": ".cache/output_reach/dual_dinov3.zip",
-      "archive_member": "dual_dinov3/ReachOrangeJuiceCartonTask/ReachOrangeJuiceCarton_0.mp4",
-      "source_sha256": "d297dfd819593490374fde9f9db6578ffa70f74dca43a83057094a320a68b9d6",
-      "episode": 0,
-      "log": {
-        "schema_version": 2,
-        "dt": 0.06666666666666667,
-        "task": "ReachOrangeJuiceCartonTask",
-        "env_id": 0,
-        "run": 0,
-        "success": true,
-        "final_step": 42,
-        "events": []
-      },
-      "display_status": "success",
-      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with bottom-left wrist inset."
+      "task": "ReachBagelTask",
+      "clips": [
+        {
+          "model": "VJEPA 2-AC*",
+          "file": "result-reach-bagel-official.mp4",
+          "poster": "result-reach-bagel-official.jpg",
+          "source_archive": ".cache/output_reach/left_vjepa_official.zip",
+          "archive_member": "right_vjepa/ReachBagelTask/ReachBagel_0.mp4",
+          "source_sha256": "c7ed3f2a93741dba82c94b7d6a9849f0058ed115f7ece1ef0eb8c608e569f12d",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachBagelTask",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 30,
+            "events": []
+          },
+          "display_status": "success",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
+        },
+        {
+          "model": "Side-view VJEPA 2",
+          "file": "result-reach-bagel-side.mp4",
+          "poster": "result-reach-bagel-side.jpg",
+          "source_archive": ".cache/output_reach/right_vjepa.zip",
+          "archive_member": "right_vjepa/ReachBagelTask/ReachBagel_0.mp4",
+          "source_sha256": "d61a9d69666150b51a66b623e86a81727015ec3e5b3f00c4d7a105723056fe6b",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachBagelTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, cropped to original 640x360."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-reach-bagel-duet.mp4",
+          "poster": "result-reach-bagel-duet.jpg",
+          "source_archive": ".cache/output_reach/dual_dinov3.zip",
+          "archive_member": "dual_dinov3/ReachBagelTask/ReachBagel_0.mp4",
+          "source_sha256": "c74318e8310f7197c1885de3a94ea6b4e66aed63af9a5561e8229a3d38e2cc15",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "ReachBagelTask",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 32,
+            "events": []
+          },
+          "display_status": "success",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with bottom-left wrist inset."
+        }
+      ]
     }
   ]
 }
