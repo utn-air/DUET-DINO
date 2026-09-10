@@ -21,9 +21,9 @@
   <meta name="twitter:image" content="https://utn-air.github.io/DUET-DINO/static/images/duet.png?v=preview-1">
   <link rel="icon" href="static/images/duet.png?v=icon-1" type="image/png">
   <link rel="apple-touch-icon" href="static/images/duet.png?v=icon-1">
-  <link rel="stylesheet" href="static/css/index.css?v=tldr-regular-14">
+  <link rel="stylesheet" href="static/css/index.css?v=results-tabs-15">
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/index.js?v=carousel-clean-2"></script>
+  <script defer src="static/js/index.js?v=results-tabs-3"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -84,7 +84,68 @@
   <section class="section results-section" id="results" aria-labelledby="results-title">
     <div class="container">
       <h2 id="results-title">Results</h2>
-      <p class="section-placeholder">Coming soon.</p>
+      <div class="result-tabs" role="tablist" aria-label="Result categories">
+        <button class="result-tab" id="tab-spatial-reach" type="button" role="tab" aria-selected="true" aria-controls="panel-spatial-reach" tabindex="0">Spatial Reach</button>
+        <button class="result-tab" id="tab-angled-reach" type="button" role="tab" aria-selected="false" aria-controls="panel-angled-reach" tabindex="-1">Angled Reach</button>
+        <button class="result-tab" id="tab-hardware" type="button" role="tab" aria-selected="false" aria-controls="panel-hardware" tabindex="-1">Hardware Runs</button>
+        <button class="result-tab" id="tab-visual-robustness" type="button" role="tab" aria-selected="false" aria-controls="panel-visual-robustness" tabindex="-1">Visual Robustness</button>
+        <button class="result-tab" id="tab-angled-lift" type="button" role="tab" aria-selected="false" aria-controls="panel-angled-lift" tabindex="-1">Angled Lift</button>
+      </div>
+      <div class="result-panel" id="panel-spatial-reach" role="tabpanel" aria-labelledby="tab-spatial-reach" tabindex="0">
+        <div class="results-carousel" role="region" aria-roledescription="carousel" aria-label="Spatial Reach videos">
+          <div class="teaser-carousel-row">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous spatial reach video" aria-controls="track-spatial-reach" disabled><span aria-hidden="true">&#8249;</span></button>
+            <div class="teaser-track" id="track-spatial-reach" tabindex="0" aria-label="Spatial Reach videos; scroll to browse">
+              <div class="carousel-empty"><p>Coming soon.</p></div>
+            </div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next spatial reach video" aria-controls="track-spatial-reach" disabled><span aria-hidden="true">&#8250;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="result-panel" id="panel-angled-reach" role="tabpanel" aria-labelledby="tab-angled-reach" tabindex="0" hidden>
+        <div class="results-carousel" role="region" aria-roledescription="carousel" aria-label="Angled Reach videos">
+          <div class="teaser-carousel-row">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous angled reach video" aria-controls="track-angled-reach" disabled><span aria-hidden="true">&#8249;</span></button>
+            <div class="teaser-track" id="track-angled-reach" tabindex="0" aria-label="Angled Reach videos; scroll to browse">
+              <div class="carousel-empty"><p>Coming soon.</p></div>
+            </div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next angled reach video" aria-controls="track-angled-reach" disabled><span aria-hidden="true">&#8250;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="result-panel" id="panel-hardware" role="tabpanel" aria-labelledby="tab-hardware" tabindex="0" hidden>
+        <div class="results-carousel" role="region" aria-roledescription="carousel" aria-label="Hardware Runs videos">
+          <div class="teaser-carousel-row">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous hardware runs video" aria-controls="track-hardware" disabled><span aria-hidden="true">&#8249;</span></button>
+            <div class="teaser-track" id="track-hardware" tabindex="0" aria-label="Hardware Runs videos; scroll to browse">
+              <div class="carousel-empty"><p>Coming soon.</p></div>
+            </div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next hardware runs video" aria-controls="track-hardware" disabled><span aria-hidden="true">&#8250;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="result-panel" id="panel-visual-robustness" role="tabpanel" aria-labelledby="tab-visual-robustness" tabindex="0" hidden>
+        <div class="results-carousel" role="region" aria-roledescription="carousel" aria-label="Visual Robustness videos">
+          <div class="teaser-carousel-row">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous visual robustness video" aria-controls="track-visual-robustness" disabled><span aria-hidden="true">&#8249;</span></button>
+            <div class="teaser-track" id="track-visual-robustness" tabindex="0" aria-label="Visual Robustness videos; scroll to browse">
+              <div class="carousel-empty"><p>Coming soon.</p></div>
+            </div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next visual robustness video" aria-controls="track-visual-robustness" disabled><span aria-hidden="true">&#8250;</span></button>
+          </div>
+        </div>
+      </div>
+      <div class="result-panel" id="panel-angled-lift" role="tabpanel" aria-labelledby="tab-angled-lift" tabindex="0" hidden>
+        <div class="results-carousel" role="region" aria-roledescription="carousel" aria-label="Angled Lift videos">
+          <div class="teaser-carousel-row">
+            <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous angled lift video" aria-controls="track-angled-lift" disabled><span aria-hidden="true">&#8249;</span></button>
+            <div class="teaser-track" id="track-angled-lift" tabindex="0" aria-label="Angled Lift videos; scroll to browse">
+              <div class="carousel-empty"><p>Coming soon.</p></div>
+            </div>
+            <button class="carousel-arrow carousel-next" type="button" aria-label="Next angled lift video" aria-controls="track-angled-lift" disabled><span aria-hidden="true">&#8250;</span></button>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
   <section class="section bibtex-section" id="bibtex" aria-labelledby="bibtex-title">

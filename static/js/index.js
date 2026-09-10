@@ -1,8 +1,7 @@
 "use strict";
-const videos = [...document.querySelectorAll("video")];
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-const carousel = document.querySelector(".teaser-carousel");
-if (carousel) {
+document.querySelectorAll(".teaser-carousel, .results-carousel").forEach(carousel => {
+  const videos = [...carousel.querySelectorAll("video")];
   const track = carousel.querySelector(".teaser-track");
   const slides = [...track.children];
   const previous = carousel.querySelector(".carousel-prev");
@@ -45,4 +44,30 @@ if (carousel) {
   previous.hidden = next.hidden = false;
   updateNavigation();
   updatePlayback();
+});
+
+const resultTabs = [...document.querySelectorAll('.result-tabs [role="tab"]')];
+function selectResultTab(selected) {
+  resultTabs.forEach(tab => {
+    const active = tab === selected;
+    tab.setAttribute("aria-selected", String(active));
+    tab.tabIndex = active ? 0 : -1;
+    const panel = document.getElementById(tab.getAttribute("aria-controls"));
+    panel.hidden = !active;
+    if (!active) panel.querySelectorAll("video").forEach(video => video.pause());
+  });
 }
+resultTabs.forEach((tab, index) => {
+  tab.addEventListener("click", () => selectResultTab(tab));
+  tab.addEventListener("keydown", event => {
+    let next;
+    if (event.key === "ArrowRight") next = (index + 1) % resultTabs.length;
+    else if (event.key === "ArrowLeft") next = (index - 1 + resultTabs.length) % resultTabs.length;
+    else if (event.key === "Home") next = 0;
+    else if (event.key === "End") next = resultTabs.length - 1;
+    else return;
+    event.preventDefault();
+    selectResultTab(resultTabs[next]);
+    resultTabs[next].focus();
+  });
+});
