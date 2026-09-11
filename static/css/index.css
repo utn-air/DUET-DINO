@@ -195,7 +195,7 @@ footer p { font-size: 12px; color: var(--muted); }
   h2 { font-size: 26px; }
   h3 { font-size: 21px; }
   h3.figure-description { font-size: 17px; }
-  .abstract-section p { text-align: left; }
+  .abstract-section p { text-align: justify; }
   .method-part + .method-part { margin-top: 40px; }
   .result-feature,
   .representation-analysis { margin-top: 40px; padding-top: 40px; }
