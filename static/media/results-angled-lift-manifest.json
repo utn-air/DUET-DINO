@@ -1,0 +1,220 @@
+{
+  "groups": [
+    {
+      "label": "Lemon",
+      "task": "AngledPickupLemonTask",
+      "clips": [
+        {
+          "model": "Wrist-view DINOv3",
+          "file": "result-angled-lift-lemon-wrist-dino.mp4",
+          "poster": "result-angled-lift-lemon-wrist-dino.jpg",
+          "source_archive": ".cache/output_angledpickup/wrist_dinov3_angledpickup.zip",
+          "archive_member": "wrist_dinov3_angledpickup/AngledPickupLemonTask/AngledPickupLemon_0.mp4",
+          "source_sha256": "ff61b9f4a65276c5d05a09b41fa5bdd94846c604a5e17a280afcdfb63337db76",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupLemonTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "wrist",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Wrist view only, original 640x360 crop."
+        },
+        {
+          "model": "Independent DINOv3",
+          "file": "result-angled-lift-lemon-ind-dino.mp4",
+          "poster": "result-angled-lift-lemon-ind-dino.jpg",
+          "source_archive": ".cache/output_angledpickup/ind_dinov3_angledpickup.zip",
+          "archive_member": "ind_dinov3_angledpickup/AngledPickupLemonTask/AngledPickupLemon_0.mp4",
+          "source_sha256": "65e966cf4965a40dfffbe3ef94a9f93c98a0e48380873c708cda789ae88b1523",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupLemonTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-angled-lift-lemon-duet.mp4",
+          "poster": "result-angled-lift-lemon-duet.jpg",
+          "source_archive": ".cache/output_angledpickup/dual_dinov3_angledpickup.zip",
+          "archive_member": "dual_dinov3_angledpickup/AngledPickupLemonTask/AngledPickupLemon_1.mp4",
+          "source_sha256": "e50d566d4404c8d10ebda4a2a2fec7381544b660e7ac7b06dad05c76d3b4624d",
+          "episode": 1,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupLemonTask",
+            "env_id": 0,
+            "run": 1,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        }
+      ]
+    },
+    {
+      "label": "Lizard",
+      "task": "AngledPickupLizardFigurineTask",
+      "clips": [
+        {
+          "model": "Wrist-view DINOv3",
+          "file": "result-angled-lift-lizard-wrist-dino.mp4",
+          "poster": "result-angled-lift-lizard-wrist-dino.jpg",
+          "source_archive": ".cache/output_angledpickup/wrist_dinov3_angledpickup.zip",
+          "archive_member": "wrist_dinov3_angledpickup/AngledPickupLizardFigurineTask/AngledPickupLizardFigurine_0.mp4",
+          "source_sha256": "9777f12b17a2dba3a741f7d0cee3077c2d2868e203edcb15e601a2035b37f10a",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupLizardFigurineTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "wrist",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Wrist view only, original 640x360 crop."
+        },
+        {
+          "model": "Independent DINOv3",
+          "file": "result-angled-lift-lizard-ind-dino.mp4",
+          "poster": "result-angled-lift-lizard-ind-dino.jpg",
+          "source_archive": ".cache/output_angledpickup/ind_dinov3_angledpickup.zip",
+          "archive_member": "ind_dinov3_angledpickup/AngledPickupLizardFigurineTask/AngledPickupLizardFigurine_0.mp4",
+          "source_sha256": "675e240014b5b21661fb6126b921399baf51e9ce536a56bb36dfbe96d4e67971",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupLizardFigurineTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "dual",
+          "processing": "Trimmed to the first 7.00 seconds at the original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-angled-lift-lizard-duet.mp4",
+          "poster": "result-angled-lift-lizard-duet.jpg",
+          "source_archive": ".cache/output_angledpickup/dual_dinov3_angledpickup.zip",
+          "archive_member": "dual_dinov3_angledpickup/AngledPickupLizardFigurineTask/AngledPickupLizardFigurine_0.mp4",
+          "source_sha256": "854c3b7ab3b0cc82ae02bc35162a0704d80391141d56140b2aa186d4abebb8e6",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupLizardFigurineTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "dual",
+          "processing": "Trimmed to the first 7.00 seconds at the original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        }
+      ]
+    },
+    {
+      "label": "Ketchup",
+      "task": "AngledPickupKetchupTask",
+      "clips": [
+        {
+          "model": "Wrist-view DINOv3",
+          "file": "result-angled-lift-ketchup-wrist-dino.mp4",
+          "poster": "result-angled-lift-ketchup-wrist-dino.jpg",
+          "source_archive": ".cache/output_angledpickup/wrist_dinov3_angledpickup.zip",
+          "archive_member": "wrist_dinov3_angledpickup/AngledPickupKetchupTask/AngledPickupKetchup_0.mp4",
+          "source_sha256": "d9c7710dc1c4cfbd1e81cf674ccfe889d93a2a755151be7021e044e0aaa9c75e",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupKetchupTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "wrist",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Wrist view only, original 640x360 crop."
+        },
+        {
+          "model": "Independent DINOv3",
+          "file": "result-angled-lift-ketchup-ind-dino.mp4",
+          "poster": "result-angled-lift-ketchup-ind-dino.jpg",
+          "source_archive": ".cache/output_angledpickup/ind_dinov3_angledpickup.zip",
+          "archive_member": "ind_dinov3_angledpickup/AngledPickupKetchupTask/AngledPickupKetchup_0.mp4",
+          "source_sha256": "68942252b6d54e0809a95f5214a6894448e87b1800df2c85e1cf78e4b12d2838",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupKetchupTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-angled-lift-ketchup-duet.mp4",
+          "poster": "result-angled-lift-ketchup-duet.jpg",
+          "source_archive": ".cache/output_angledpickup/dual_dinov3_angledpickup.zip",
+          "archive_member": "dual_dinov3_angledpickup/AngledPickupKetchupTask/AngledPickupKetchup_0.mp4",
+          "source_sha256": "2f355cb0a3d28c27c501271da662107fcc695b7786cf3f7232033269d0b7ce76",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledPickupKetchupTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        }
+      ]
+    }
+  ]
+}
