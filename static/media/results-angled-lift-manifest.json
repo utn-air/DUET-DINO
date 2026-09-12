@@ -66,9 +66,10 @@
             "final_step": null,
             "events": []
           },
-          "display_status": "unlabeled",
+          "display_status": "success",
           "view": "dual",
-          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset.",
+          "display_status_basis": "Project-author confirmed successful outcome."
         }
       ]
     },
@@ -116,9 +117,10 @@
             "final_step": null,
             "events": []
           },
-          "display_status": "unlabeled",
+          "display_status": "success",
           "view": "dual",
-          "processing": "Trimmed to the first 7.00 seconds at the original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+          "processing": "Trimmed to the first 7.00 seconds at the original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset.",
+          "display_status_basis": "Project-author confirmed successful outcome."
         },
         {
           "model": "DUET-DINO",
@@ -138,9 +140,10 @@
             "final_step": null,
             "events": []
           },
-          "display_status": "unlabeled",
+          "display_status": "success",
           "view": "dual",
-          "processing": "Trimmed to the first 7.00 seconds at the original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+          "processing": "Trimmed to the first 7.00 seconds at the original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset.",
+          "display_status_basis": "Project-author confirmed successful outcome."
         }
       ]
     },
@@ -210,9 +213,10 @@
             "final_step": null,
             "events": []
           },
-          "display_status": "unlabeled",
+          "display_status": "success",
           "view": "dual",
-          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset.",
+          "display_status_basis": "Project-author confirmed successful outcome."
         }
       ]
     }

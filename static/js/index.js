@@ -2,6 +2,52 @@
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 document.querySelectorAll(".teaser-carousel, .results-carousel").forEach(carousel => {
   const videos = [...carousel.querySelectorAll("video")];
+  const userPaused = new WeakSet();
+  const manuallyStarted = new WeakSet();
+  const playbackControls = new Map();
+  const pauseIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+  const replayIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 7.6A7 7 0 1 1 5 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M3.8 4.8v5h5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  function updatePlaybackControl(video) {
+    const control = playbackControls.get(video);
+    if (!control) return;
+    const replay = video.paused || video.ended;
+    control.innerHTML = replay ? replayIcon : pauseIcon;
+    control.setAttribute("aria-label", replay ? "Replay video from beginning" : "Pause video");
+    control.title = replay ? "Replay" : "Pause";
+  }
+  videos.forEach(video => {
+    video.controls = false;
+    let frame = video.parentElement;
+    if (!frame.classList.contains("comparison-video")) {
+      const wrapper = document.createElement("div");
+      wrapper.className = "video-frame";
+      frame.insertBefore(wrapper, video);
+      wrapper.appendChild(video);
+      frame = wrapper;
+    }
+    const control = document.createElement("button");
+    control.className = "video-playback-control";
+    control.type = "button";
+    playbackControls.set(video, control);
+    frame.appendChild(control);
+    control.addEventListener("click", event => {
+      event.stopPropagation();
+      if (!video.paused && !video.ended) {
+        userPaused.add(video);
+        manuallyStarted.delete(video);
+        video.pause();
+      } else {
+        userPaused.delete(video);
+        manuallyStarted.add(video);
+        video.currentTime = 0;
+        video.play().catch(() => updatePlaybackControl(video));
+      }
+    });
+    video.addEventListener("play", () => updatePlaybackControl(video));
+    video.addEventListener("pause", () => updatePlaybackControl(video));
+    video.addEventListener("ended", () => updatePlaybackControl(video));
+    updatePlaybackControl(video);
+  });
   const track = carousel.querySelector(".teaser-track");
   const slides = [...track.querySelectorAll(".comparison-video")];
   if (!slides.length) slides.push(...track.children);
@@ -11,7 +57,8 @@ document.querySelectorAll(".teaser-carousel, .results-carousel").forEach(carouse
   const visibleVideos = new Set();
   function updatePlayback() {
     videos.forEach(video => {
-      if (!paused && !document.hidden && visibleVideos.has(video)) video.play().catch(() => {});
+      const shouldPlay = !document.hidden && visibleVideos.has(video) && !userPaused.has(video) && (!paused || manuallyStarted.has(video));
+      if (shouldPlay) video.play().catch(() => updatePlaybackControl(video));
       else video.pause();
     });
   }
