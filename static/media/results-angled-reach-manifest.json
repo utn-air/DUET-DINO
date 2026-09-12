@@ -1,0 +1,242 @@
+{
+  "groups": [
+    {
+      "label": "Ketchup",
+      "task": "AngledReachKetchupTask",
+      "clips": [
+        {
+          "model": "V-JEPA 2 - AC*",
+          "file": "result-angled-reach-ketchup-official.mp4",
+          "poster": "result-angled-reach-ketchup-official.jpg",
+          "source_archive": ".cache/output_angledreach/left_vjepa_official_angledreach.zip",
+          "archive_member": "right_vjepa_angledreach/AngledReachKetchupTask/AngledReachKetchup_0.mp4",
+          "source_sha256": "f5681952ed6343d59dc738a2da0c87137c5a935d01ada8a2dcffa732e5e82067",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachKetchupTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "global",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, original 640x360 crop."
+        },
+        {
+          "model": "Side-view V-JEPA 2",
+          "file": "result-angled-reach-ketchup-side-vjepa.mp4",
+          "poster": "result-angled-reach-ketchup-side-vjepa.jpg",
+          "source_archive": ".cache/output_angledreach/right_vjepa_angledreach.zip",
+          "archive_member": "right_vjepa_angledreach/AngledReachKetchupTask/AngledReachKetchup_0.mp4",
+          "source_sha256": "0ea34d34a87ce5b88f956cc6f64fb931544db61a8ebe86eeaf2be07542b753df",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachKetchupTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "global",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, original 640x360 crop."
+        },
+        {
+          "model": "Wrist-view V-JEPA 2",
+          "file": "result-angled-reach-ketchup-wrist-vjepa.mp4",
+          "poster": "result-angled-reach-ketchup-wrist-vjepa.jpg",
+          "source_archive": ".cache/output_angledreach/wrist_vjepa_angledreach.zip",
+          "archive_member": "wrist_vjepa_angledreach/AngledReachKetchupTask/AngledReachKetchup_0.mp4",
+          "source_sha256": "82abaa31f4719d2b8b430c775285b1180f73e518759854f4f8890bfa0707ec44",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachKetchupTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "wrist",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Wrist view only, original 640x360 crop."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-angled-reach-ketchup-duet.mp4",
+          "poster": "result-angled-reach-ketchup-duet.jpg",
+          "source_archive": ".cache/output_angledreach/dual_dinov3_angledreach.zip",
+          "archive_member": "dual_dinov3_angledreach/AngledReachKetchupTask/AngledReachKetchup_0.mp4",
+          "source_sha256": "4420756f86bf7b53ccde8e6389e4f3097c51f180e78cc94ec0c3fe82060007af",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachKetchupTask",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 32,
+            "events": []
+          },
+          "display_status": "success",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        }
+      ]
+    },
+    {
+      "label": "Drill",
+      "task": "AngledReachDrillTask",
+      "clips": [
+        {
+          "model": "Wrist-view DINOv3",
+          "file": "result-angled-reach-drill-wrist-dino.mp4",
+          "poster": "result-angled-reach-drill-wrist-dino.jpg",
+          "source_archive": ".cache/output_angledreach/wrist_dinov3_angledreach.zip",
+          "archive_member": "wrist_dinov3_angledreach/AngledReachDrillTask/AngledReachDrill_0.mp4",
+          "source_sha256": "a32f227312fa7b857d4d38d4aaf06250c1dd2eec7f399e5340bb6afe0705b77d",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachDrillTask",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 22,
+            "events": []
+          },
+          "display_status": "success",
+          "view": "wrist",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Wrist view only, original 640x360 crop."
+        },
+        {
+          "model": "Independent DINOv3",
+          "file": "result-angled-reach-drill-ind-dino.mp4",
+          "poster": "result-angled-reach-drill-ind-dino.jpg",
+          "source_archive": ".cache/output_angledreach/ind_dinov3_angledreach.zip",
+          "archive_member": "ind_dinov3_angledreach/AngledReachDrillTask/AngledReachDrill_0.mp4",
+          "source_sha256": "f62b24f854f26b322655796b7009b7bb5cec886fac1828137d6e0b5e4c38afa5",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachDrillTask",
+            "env_id": 0,
+            "run": 0,
+            "success": null,
+            "final_step": null,
+            "events": []
+          },
+          "display_status": "unlabeled",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-angled-reach-drill-duet.mp4",
+          "poster": "result-angled-reach-drill-duet.jpg",
+          "source_archive": ".cache/output_angledreach/dual_dinov3_angledreach.zip",
+          "archive_member": "dual_dinov3_angledreach/AngledReachDrillTask/AngledReachDrill_0.mp4",
+          "source_sha256": "d68ed77cc969b501da018fab63e35e78442b70f2d68e2867c0e12d4019c71bd6",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachDrillTask",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 24,
+            "events": []
+          },
+          "display_status": "success",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        }
+      ]
+    },
+    {
+      "label": "Carton",
+      "task": "AngledReachCartoon2Task",
+      "clips": [
+        {
+          "model": "Side-view DINOv3",
+          "file": "result-angled-reach-carton-side-dino.mp4",
+          "poster": "result-angled-reach-carton-side-dino.jpg",
+          "source_archive": ".cache/output_angledreach/right_dinov3_angledreach.zip",
+          "archive_member": "right_dinov3_angledreach/AngledReachCartoon2Task/AngledReachCartoon2_0.mp4",
+          "source_sha256": "58e0f8d759f8332a89fac796bdb11488b3b0f885f4f1bae05b7eb3258e34e08c",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachCartoon2Task",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 38,
+            "events": []
+          },
+          "display_status": "success",
+          "view": "global",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, original 640x360 crop."
+        },
+        {
+          "model": "Side-view V-JEPA 2",
+          "file": "result-angled-reach-carton-side-vjepa.mp4",
+          "poster": "result-angled-reach-carton-side-vjepa.jpg",
+          "source_archive": ".cache/output_angledreach/right_vjepa_angledreach.zip",
+          "archive_member": "right_vjepa_angledreach/AngledReachCartoon2Task/AngledReachCartoon2_0.mp4",
+          "source_sha256": "ed2f6ba1121b83e8b99260e5d3ac2b3ddc8526c07c8ed59f788755c5426cb4a5",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachCartoon2Task",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 48,
+            "events": []
+          },
+          "display_status": "success",
+          "view": "global",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view only, original 640x360 crop."
+        },
+        {
+          "model": "DUET-DINO",
+          "file": "result-angled-reach-carton-duet.mp4",
+          "poster": "result-angled-reach-carton-duet.jpg",
+          "source_archive": ".cache/output_angledreach/dual_dinov3_angledreach.zip",
+          "archive_member": "dual_dinov3_angledreach/AngledReachCartoon2Task/AngledReachCartoon2_0.mp4",
+          "source_sha256": "bc4b85758a2373c623edaba37f7cc621d3f0e6d811723ac2bfded0d5c99aa53d",
+          "episode": 0,
+          "log": {
+            "schema_version": 2,
+            "dt": 0.06666666666666667,
+            "task": "AngledReachCartoon2Task",
+            "env_id": 0,
+            "run": 0,
+            "success": true,
+            "final_step": 24,
+            "events": []
+          },
+          "display_status": "success",
+          "view": "dual",
+          "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+        }
+      ]
+    }
+  ]
+}
