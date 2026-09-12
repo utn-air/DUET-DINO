@@ -6,14 +6,14 @@ document.querySelectorAll(".teaser-carousel, .results-carousel").forEach(carouse
   const manuallyStarted = new WeakSet();
   const playbackControls = new Map();
   const pauseIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
-  const replayIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 7.6A7 7 0 1 1 5 12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M3.8 4.8v5h5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+  const playIcon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10-6.5z"/></svg>';
   function updatePlaybackControl(video) {
     const control = playbackControls.get(video);
     if (!control) return;
-    const replay = video.paused || video.ended;
-    control.innerHTML = replay ? replayIcon : pauseIcon;
-    control.setAttribute("aria-label", replay ? "Replay video from beginning" : "Pause video");
-    control.title = replay ? "Replay" : "Pause";
+    const resumable = video.paused || video.ended;
+    control.innerHTML = resumable ? playIcon : pauseIcon;
+    control.setAttribute("aria-label", resumable ? "Resume video" : "Pause video");
+    control.title = resumable ? "Resume" : "Pause";
   }
   videos.forEach(video => {
     video.controls = false;
@@ -39,7 +39,6 @@ document.querySelectorAll(".teaser-carousel, .results-carousel").forEach(carouse
       } else {
         userPaused.delete(video);
         manuallyStarted.add(video);
-        video.currentTime = 0;
         video.play().catch(() => updatePlaybackControl(video));
       }
     });
