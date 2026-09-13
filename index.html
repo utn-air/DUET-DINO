@@ -21,7 +21,7 @@
   <meta name="twitter:image" content="https://utn-air.github.io/DUET-DINO/static/images/duet.png?v=preview-1">
   <link rel="icon" href="static/images/duet.png?v=icon-1" type="image/png">
   <link rel="apple-touch-icon" href="static/images/duet.png?v=icon-1">
-  <link rel="stylesheet" href="static/css/index.css?v=desktop-video-hover-37">
+  <link rel="stylesheet" href="static/css/index.css?v=visual-robustness-38">
   <script defer src="static/js/fontawesome.all.min.js"></script>
   <script defer src="static/js/index.js?v=pause-resume-7"></script>
 </head>
@@ -34,7 +34,7 @@
     <p class="affiliations"><span><sup>1</sup> University of Technology Nuremberg</span><span><sup>2</sup> Technical University of Munich</span><span><sup>3</sup> Karlsruhe Institute of Technology</span><span><sup>4</sup> NVIDIA</span><span><sup>5</sup> Robotics Institute Germany</span></p>
     <div class="publication-links">
       <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/abs/2609.10506" target="_blank" rel="noopener" aria-label="Read the DUET-DINO paper on arXiv in a new tab"><span class="icon" aria-hidden="true"><i class="ai ai-arxiv"></i></span><span>arXiv</span></a></span>
-      <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://utn-air.github.io/DUET-DINO/" aria-label="DUET-DINO project page; code coming soon"><span class="icon" aria-hidden="true"><i class="fab fa-github"></i></span><span>Code</span><span class="tbd">TBD</span></a></span>
+      <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://github.com/nisarganc/DUET-DINO" target="_blank" rel="noopener" aria-label="View the DUET-DINO code on GitHub in a new tab"><span class="icon" aria-hidden="true"><i class="fab fa-github"></i></span><span>Code</span></a></span>
       <span class="link-block"><a class="external-link button is-normal is-rounded is-dark" href="https://utn-air.github.io/DUET-DINO/" aria-label="DUET-DINO project page; checkpoints coming soon"><span class="icon" aria-hidden="true"><img class="huggingface-icon" src="static/images/hugging-face.svg" alt=""></span><span>Checkpoints</span><span class="tbd">TBD</span></a></span>
     </div>
     <div class="teaser-carousel" role="region" aria-roledescription="carousel" aria-label="DUET-DINO reach, angled-reach, and grasp-and-lift demonstrations">
@@ -264,11 +264,53 @@
           <div class="teaser-carousel-row">
             <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous visual robustness video" aria-controls="track-visual-robustness" disabled><span aria-hidden="true">&#8249;</span></button>
             <div class="teaser-track" id="track-visual-robustness" tabindex="0" aria-label="Visual Robustness videos; scroll to browse">
-              <div class="carousel-empty"><p>Coming soon.</p></div>
+              <figure class="teaser-slide result-slide">
+                <div class="comparison-video">
+                  <video muted loop playsinline preload="metadata" poster="static/media/result-visual-robustness-macaroni-cabin-d2.jpg" aria-label="AngledReachMacaroniObjects2Task, Cabin background, 2 distractors: DUET-DINO, global and wrist views"><source src="static/media/result-visual-robustness-macaroni-cabin-d2.mp4" type="video/mp4"></video>
+                  <div class="model-overlay"><span>DUET-DINO</span><svg class="model-status" viewBox="0 0 24 24" role="img" aria-label="Successful episode"><title>Successful episode</title><rect width="24" height="24" rx="4" fill="#2e9d50"/><path d="m5 12 4 4 10-10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                </div>
+                <figcaption class="teaser-task-bar">Macaroni · Cabin · 2 distractors</figcaption>
+              </figure>
+              <figure class="teaser-slide result-slide">
+                <div class="comparison-video">
+                  <video muted loop playsinline preload="metadata" poster="static/media/result-visual-robustness-drill-artist-workshop-d2.jpg" aria-label="AngledReachDrillObjects2Task, Artist Workshop background, 2 distractors: DUET-DINO, global and wrist views"><source src="static/media/result-visual-robustness-drill-artist-workshop-d2.mp4" type="video/mp4"></video>
+                  <div class="model-overlay"><span>DUET-DINO</span><svg class="model-status" viewBox="0 0 24 24" role="img" aria-label="Successful episode"><title>Successful episode</title><rect width="24" height="24" rx="4" fill="#2e9d50"/><path d="m5 12 4 4 10-10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                </div>
+                <figcaption class="teaser-task-bar">Drill · Artist Workshop · 2 distractors</figcaption>
+              </figure>
+              <figure class="teaser-slide result-slide">
+                <div class="comparison-video">
+                  <video muted loop playsinline preload="metadata" poster="static/media/result-visual-robustness-macaroni-en-suite-d4.jpg" aria-label="AngledReachMacaroniObjects4Task, En-suite background, 4 distractors: DUET-DINO, global and wrist views"><source src="static/media/result-visual-robustness-macaroni-en-suite-d4.mp4" type="video/mp4"></video>
+                  <div class="model-overlay"><span>DUET-DINO</span><svg class="model-status" viewBox="0 0 24 24" role="img" aria-label="Successful episode"><title>Successful episode</title><rect width="24" height="24" rx="4" fill="#2e9d50"/><path d="m5 12 4 4 10-10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                </div>
+                <figcaption class="teaser-task-bar">Macaroni · En-suite · 4 distractors</figcaption>
+              </figure>
+              <figure class="teaser-slide result-slide">
+                <div class="comparison-video">
+                  <video muted loop playsinline preload="metadata" poster="static/media/result-visual-robustness-drill-wooden-lounge-d4.jpg" aria-label="AngledReachDrillObjects4Task, Wooden Lounge background, 4 distractors: DUET-DINO, global and wrist views"><source src="static/media/result-visual-robustness-drill-wooden-lounge-d4.mp4" type="video/mp4"></video>
+                  <div class="model-overlay"><span>DUET-DINO</span><svg class="model-status" viewBox="0 0 24 24" role="img" aria-label="Successful episode"><title>Successful episode</title><rect width="24" height="24" rx="4" fill="#2e9d50"/><path d="m5 12 4 4 10-10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                </div>
+                <figcaption class="teaser-task-bar">Drill · Wooden Lounge · 4 distractors</figcaption>
+              </figure>
+              <figure class="teaser-slide result-slide">
+                <div class="comparison-video">
+                  <video muted loop playsinline preload="metadata" poster="static/media/result-visual-robustness-macaroni-pump-house-d4.jpg" aria-label="AngledReachMacaroniObjects4Task, Pump House background, 4 distractors: DUET-DINO, global and wrist views"><source src="static/media/result-visual-robustness-macaroni-pump-house-d4.mp4" type="video/mp4"></video>
+                  <div class="model-overlay"><span>DUET-DINO</span><svg class="model-status" viewBox="0 0 24 24" role="img" aria-label="Successful episode"><title>Successful episode</title><rect width="24" height="24" rx="4" fill="#2e9d50"/><path d="m5 12 4 4 10-10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                </div>
+                <figcaption class="teaser-task-bar">Macaroni · Pump House · 4 distractors</figcaption>
+              </figure>
+              <figure class="teaser-slide result-slide">
+                <div class="comparison-video">
+                  <video muted loop playsinline preload="metadata" poster="static/media/result-visual-robustness-drill-cabin-d1.jpg" aria-label="AngledReachDrillObjects1Task, Cabin background, 1 distractor: DUET-DINO, global and wrist views"><source src="static/media/result-visual-robustness-drill-cabin-d1.mp4" type="video/mp4"></video>
+                  <div class="model-overlay"><span>DUET-DINO</span><svg class="model-status" viewBox="0 0 24 24" role="img" aria-label="Successful episode"><title>Successful episode</title><rect width="24" height="24" rx="4" fill="#2e9d50"/><path d="m5 12 4 4 10-10" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+                </div>
+                <figcaption class="teaser-task-bar">Drill · Cabin · 1 distractor</figcaption>
+              </figure>
             </div>
             <button class="carousel-arrow carousel-next" type="button" aria-label="Next visual robustness video" aria-controls="track-visual-robustness" disabled><span aria-hidden="true">&#8250;</span></button>
           </div>
         </div>
+        <p class="result-panel-summary">Angled-reach tasks by DUET-DINO on various bgs and distractor table-top objects</p>
       </div>
       <div class="result-panel" id="panel-angled-lift" role="tabpanel" aria-labelledby="tab-angled-lift" tabindex="0" hidden>
         <div class="results-carousel" role="region" aria-roledescription="carousel" aria-label="Angled Lift videos">
@@ -370,7 +412,7 @@
     author  = {Nisarga Nilavadi and Ralf R{\"o}mer and Moritz Reuss and Michael Krawez and Tobias J{\"u}lg and Angela P. Schoellig and Rudolf Lioutikov and Wolfram Burgard},
     journal = {arXiv preprint arXiv:2609.10506},
     year    = {2026}
-}
+    }
       </code></pre>
       </div>
     </div>

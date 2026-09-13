@@ -1,0 +1,192 @@
+{
+  "source_root": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1",
+  "selection_summary": {
+    "clip_count": 6,
+    "backgrounds": [
+      "artist_workshop",
+      "cabin",
+      "en_suite",
+      "pump_house",
+      "wooden_lounge"
+    ],
+    "distractor_counts": [
+      1,
+      2,
+      4
+    ],
+    "tasks": [
+      "Macaroni",
+      "Drill"
+    ]
+  },
+  "clips": [
+    {
+      "task_label": "Macaroni",
+      "source_task": "AngledReachMacaroniObjects2Task",
+      "background": "cabin",
+      "background_label": "Cabin",
+      "distractor_count": 2,
+      "model": "DUET-DINO",
+      "file": "result-visual-robustness-macaroni-cabin-d2.mp4",
+      "poster": "result-visual-robustness-macaroni-cabin-d2.jpg",
+      "source_directory": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachMacaroniObjects2Task_bg_cabin",
+      "source_file": "AngledReachMacaroni_0.mp4",
+      "source_sha256": "448d216ed63f88608f61a254cfe0b433a4ccb7cf85bb354cf47a8e2dade0fb92",
+      "episode": 0,
+      "log": {
+        "schema_version": 2,
+        "dt": 0.06666666666666667,
+        "task": "AngledReachMacaroniTask",
+        "env_id": 0,
+        "run": 0,
+        "success": true,
+        "final_step": 69,
+        "events": []
+      },
+      "display_status": "success",
+      "display_status_basis": "Successful episode in source log.",
+      "view": "dual",
+      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+    },
+    {
+      "task_label": "Drill",
+      "source_task": "AngledReachDrillObjects2Task",
+      "background": "artist_workshop",
+      "background_label": "Artist Workshop",
+      "distractor_count": 2,
+      "model": "DUET-DINO",
+      "file": "result-visual-robustness-drill-artist-workshop-d2.mp4",
+      "poster": "result-visual-robustness-drill-artist-workshop-d2.jpg",
+      "source_directory": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachDrillObjects2Task_bg_artist_workshop",
+      "source_file": "AngledReachDrill_0.mp4",
+      "source_sha256": "69776d65ede246db503d620f64b1adf138366f49e527453c37ed78678d1affcb",
+      "episode": 0,
+      "log": {
+        "schema_version": 2,
+        "dt": 0.06666666666666667,
+        "task": "AngledReachDrillTask",
+        "env_id": 0,
+        "run": 0,
+        "success": true,
+        "final_step": 99,
+        "events": []
+      },
+      "display_status": "success",
+      "display_status_basis": "Successful episode in source log.",
+      "view": "dual",
+      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+    },
+    {
+      "task_label": "Macaroni",
+      "source_task": "AngledReachMacaroniObjects4Task",
+      "background": "en_suite",
+      "background_label": "En-suite",
+      "distractor_count": 4,
+      "model": "DUET-DINO",
+      "file": "result-visual-robustness-macaroni-en-suite-d4.mp4",
+      "poster": "result-visual-robustness-macaroni-en-suite-d4.jpg",
+      "source_directory": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachMacaroniObjects4Task_bg_en_suite",
+      "source_file": "AngledReachMacaroni_0.mp4",
+      "source_sha256": "391b7307c1dbbd94552b882179f12ce5907c46ab0acd587726acfadebc3f23b0",
+      "episode": 0,
+      "log": {
+        "schema_version": 2,
+        "dt": 0.06666666666666667,
+        "task": "AngledReachMacaroniTask",
+        "env_id": 0,
+        "run": 0,
+        "success": true,
+        "final_step": 49,
+        "events": []
+      },
+      "display_status": "success",
+      "display_status_basis": "Successful episode in source log.",
+      "view": "dual",
+      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+    },
+    {
+      "task_label": "Drill",
+      "source_task": "AngledReachDrillObjects4Task",
+      "background": "wooden_lounge",
+      "background_label": "Wooden Lounge",
+      "distractor_count": 4,
+      "model": "DUET-DINO",
+      "file": "result-visual-robustness-drill-wooden-lounge-d4.mp4",
+      "poster": "result-visual-robustness-drill-wooden-lounge-d4.jpg",
+      "source_directory": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachDrillObjects4Task_bg_wooden_lounge",
+      "source_file": "AngledReachDrill_0.mp4",
+      "source_sha256": "33adcf56753a0bbcb92c2aac0794fdf4fa0d833cf18b104a76872857b7fc5266",
+      "episode": 0,
+      "log": {
+        "schema_version": 2,
+        "dt": 0.06666666666666667,
+        "task": "AngledReachDrillTask",
+        "env_id": 0,
+        "run": 0,
+        "success": true,
+        "final_step": 57,
+        "events": []
+      },
+      "display_status": "success",
+      "display_status_basis": "Successful episode in source log.",
+      "view": "dual",
+      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+    },
+    {
+      "task_label": "Macaroni",
+      "source_task": "AngledReachMacaroniObjects4Task",
+      "background": "pump_house",
+      "background_label": "Pump House",
+      "distractor_count": 4,
+      "model": "DUET-DINO",
+      "file": "result-visual-robustness-macaroni-pump-house-d4.mp4",
+      "poster": "result-visual-robustness-macaroni-pump-house-d4.jpg",
+      "source_directory": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachMacaroniObjects4Task_bg_pump_house",
+      "source_file": "AngledReachMacaroni_0.mp4",
+      "source_sha256": "2ba1df93b5683f248f6b773875b71f9460e0222bb42440a4e956e9d33f8b1b45",
+      "episode": 0,
+      "log": {
+        "schema_version": 2,
+        "dt": 0.06666666666666667,
+        "task": "AngledReachMacaroniTask",
+        "env_id": 0,
+        "run": 0,
+        "success": true,
+        "final_step": 53,
+        "events": []
+      },
+      "display_status": "success",
+      "display_status_basis": "Successful episode in source log.",
+      "view": "dual",
+      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+    },
+    {
+      "task_label": "Drill",
+      "source_task": "AngledReachDrillObjects1Task",
+      "background": "cabin",
+      "background_label": "Cabin",
+      "distractor_count": 1,
+      "model": "DUET-DINO",
+      "file": "result-visual-robustness-drill-cabin-d1.mp4",
+      "poster": "result-visual-robustness-drill-cabin-d1.jpg",
+      "source_directory": ".cache/ouput_bgdistractor/dual_dinov3_angledreach_bg5_objects1to5_seed1/AngledReachDrillObjects1Task_bg_cabin",
+      "source_file": "AngledReachDrill_0.mp4",
+      "source_sha256": "6f130900a3e0ecb059f3ff5fd67283c975716391845ace43ff8a8414c569aeaf",
+      "episode": 0,
+      "log": {
+        "schema_version": 2,
+        "dt": 0.06666666666666667,
+        "task": "AngledReachDrillTask",
+        "env_id": 0,
+        "run": 0,
+        "success": true,
+        "final_step": 47,
+        "events": []
+      },
+      "display_status": "success",
+      "display_status_basis": "Successful episode in source log.",
+      "view": "dual",
+      "processing": "Full source duration and original 15 fps; H.264 CRF 17; no audio or playback speed change. Global view 640x360 with the complete wrist view resized into a bottom-left inset."
+    }
+  ]
+}
