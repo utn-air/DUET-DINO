@@ -1,0 +1,833 @@
+{
+  "reference_edits": [
+    ".cache/hw_edited/duetdino-dinal.MP4",
+    ".cache/hw_edited/ind-dino-final.MP4",
+    ".cache/hw_edited/wrist-final.MP4"
+  ],
+  "method": {
+    "motion_detection": "Mean absolute grayscale frame difference on the wrist stream at 64x36; threshold > 0.25.",
+    "interval_cleanup": "Merge motion detections separated by at most 0.3 seconds; discard detections shorter than 0.3 seconds; pad retained intervals by 0.1 seconds.",
+    "timing": "Concatenate retained intervals and play at 3.8x speed.",
+    "synchronization": "For DUET-DINO and Independent DINOv3, wrist-detected intervals are applied identically to side and wrist streams before composition.",
+    "artifact_rejection": "Wrist-driven detection rejects person-only motion in the side view; isolated startup or non-task intervals are excluded where identified."
+  },
+  "clips": [
+    {
+      "task": "Bottle",
+      "task_slug": "bottle",
+      "model": "DUET-DINO",
+      "model_slug": "duet",
+      "folder_model": "dual",
+      "timestamp": "2026-09-04_16-48-14",
+      "source_prefix": "episode_bottle",
+      "side_source": ".cache/hw_output/bottle/videos_bottle_dual/episode_bottle_2026-09-04_16-48-14_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/bottle/videos_bottle_dual/episode_bottle_2026-09-04_16-48-14_wrist_h264.mp4",
+      "side_source_sha256": "e7a9aab55e2662b1d0ea37bbc2855aa090f5ac65d69b9ded3ae2dc6d700a57b3",
+      "wrist_source_sha256": "be462c1fca8de6b667f6155fb1d06ff6ce609658d1c1527e35d71c1e0e0784db",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 2320,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_detection_end_frame_exclusive": 1670,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          103,
+          122
+        ],
+        [
+          219,
+          243
+        ],
+        [
+          342,
+          354
+        ],
+        [
+          453,
+          482
+        ],
+        [
+          579,
+          606
+        ],
+        [
+          706,
+          728
+        ],
+        [
+          828,
+          854
+        ],
+        [
+          956,
+          986
+        ],
+        [
+          1086,
+          1111
+        ],
+        [
+          1210,
+          1238
+        ],
+        [
+          1335,
+          1383
+        ],
+        [
+          1483,
+          1514
+        ],
+        [
+          1558,
+          1574
+        ],
+        [
+          1575,
+          1586
+        ],
+        [
+          1592,
+          1600
+        ],
+        [
+          1606,
+          1658
+        ]
+      ],
+      "retained_source_frames": 408,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 10.736842105263158,
+      "file": "result-hardware-bottle-duet.mp4",
+      "poster": "result-hardware-bottle-duet.jpg",
+      "view": "dual",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x; the side and wrist streams use identical cuts. Selection ends after the final robot task motion. Dual-view output uses the side view with a bottom-left wrist inset.",
+      "selection_basis": "Episode explicitly selected by the project author."
+    },
+    {
+      "task": "Bottle",
+      "task_slug": "bottle",
+      "model": "Independent DINOv3",
+      "model_slug": "ind-dino",
+      "folder_model": "ind",
+      "timestamp": "2026-09-04_17-36-26",
+      "source_prefix": "episode_bottle",
+      "side_source": ".cache/hw_output/bottle/videos_bottle_ind/episode_bottle_2026-09-04_17-36-26_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/bottle/videos_bottle_ind/episode_bottle_2026-09-04_17-36-26_wrist_h264.mp4",
+      "side_source_sha256": "f7136436ee53c8e6f35fa4e9f3a445623e87976cd2b4c0543043441b4c5f7b6f",
+      "wrist_source_sha256": "1c8d8ff907b0cab23a3a4c7e524a773c9ec23234e6186b60f1f81b30f60b21b0",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 1883,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          100,
+          124
+        ],
+        [
+          218,
+          242
+        ],
+        [
+          335,
+          350
+        ],
+        [
+          442,
+          470
+        ],
+        [
+          564,
+          585
+        ],
+        [
+          679,
+          688
+        ],
+        [
+          784,
+          801
+        ],
+        [
+          897,
+          919
+        ],
+        [
+          1015,
+          1039
+        ],
+        [
+          1134,
+          1154
+        ],
+        [
+          1251,
+          1274
+        ],
+        [
+          1367,
+          1394
+        ],
+        [
+          1489,
+          1514
+        ],
+        [
+          1608,
+          1639
+        ],
+        [
+          1735,
+          1766
+        ],
+        [
+          1859,
+          1883
+        ]
+      ],
+      "retained_source_frames": 365,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 9.605263157894738,
+      "file": "result-hardware-bottle-ind-dino.mp4",
+      "poster": "result-hardware-bottle-ind-dino.jpg",
+      "view": "dual",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Side and wrist streams use identical cuts. Dual-view output uses the side view with a bottom-left wrist inset.",
+      "selection_basis": "Episode explicitly selected by the project author.",
+      "excluded_non_task_intervals": [
+        {
+          "reason": "startup movement before the first recorded robot action",
+          "intervals_frames_end_exclusive": []
+        }
+      ]
+    },
+    {
+      "task": "Bottle",
+      "task_slug": "bottle",
+      "model": "Wrist-view DINOv3",
+      "model_slug": "wrist-dino",
+      "folder_model": "wrist",
+      "timestamp": "2026-09-04_18-20-29",
+      "source_prefix": "episode_bottle",
+      "side_source": ".cache/hw_output/bottle/videos_bottle_wrist/episode_bottle_2026-09-04_18-20-29_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/bottle/videos_bottle_wrist/episode_bottle_2026-09-04_18-20-29_wrist_h264.mp4",
+      "side_source_sha256": "645fb017975864a937788da4e8aa458dc0d4d3087ac7fcc8a006d3ca0c5c1942",
+      "wrist_source_sha256": "15ae3710fe493957addbad35f17852de0f8345617f9907e7a9772486d3e1eff7",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 980,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          49,
+          74
+        ],
+        [
+          117,
+          136
+        ],
+        [
+          181,
+          207
+        ],
+        [
+          250,
+          271
+        ],
+        [
+          317,
+          339
+        ],
+        [
+          385,
+          410
+        ],
+        [
+          455,
+          482
+        ],
+        [
+          524,
+          544
+        ],
+        [
+          591,
+          614
+        ],
+        [
+          658,
+          686
+        ],
+        [
+          730,
+          758
+        ],
+        [
+          802,
+          833
+        ],
+        [
+          880,
+          906
+        ],
+        [
+          952,
+          980
+        ]
+      ],
+      "retained_source_frames": 349,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 9.18421052631579,
+      "file": "result-hardware-bottle-wrist-dino.mp4",
+      "poster": "result-hardware-bottle-wrist-dino.jpg",
+      "view": "wrist",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Wrist view only.",
+      "selection_basis": "Matches the corresponding user-edited reference episode."
+    },
+    {
+      "task": "Fruit",
+      "task_slug": "fruit",
+      "model": "DUET-DINO",
+      "model_slug": "duet",
+      "folder_model": "dual",
+      "timestamp": "2026-09-04_13-49-38",
+      "source_prefix": "episode_spoon",
+      "side_source": ".cache/hw_output/fruit/videos_fruit_dual/episode_spoon_2026-09-04_13-49-38_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/fruit/videos_fruit_dual/episode_spoon_2026-09-04_13-49-38_wrist_h264.mp4",
+      "side_source_sha256": "c95df41557f872c8feaa74c247ce73f1382a40960b920d2140f39072cef50a09",
+      "wrist_source_sha256": "52546e0032d5fa8b3fd1b15ea4b2a765178dacfa4ad7945231ad3a32db267738",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 2871,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          202,
+          234
+        ],
+        [
+          435,
+          459
+        ],
+        [
+          660,
+          686
+        ],
+        [
+          886,
+          914
+        ],
+        [
+          1114,
+          1146
+        ],
+        [
+          1348,
+          1370
+        ],
+        [
+          1570,
+          1600
+        ],
+        [
+          1798,
+          1838
+        ],
+        [
+          2016,
+          2037
+        ],
+        [
+          2138,
+          2155
+        ],
+        [
+          2254,
+          2282
+        ],
+        [
+          2398,
+          2419
+        ],
+        [
+          2563,
+          2585
+        ],
+        [
+          2729,
+          2754
+        ],
+        [
+          2854,
+          2871
+        ]
+      ],
+      "retained_source_frames": 385,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 10.131578947368421,
+      "file": "result-hardware-fruit-duet.mp4",
+      "poster": "result-hardware-fruit-duet.jpg",
+      "view": "dual",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Side and wrist streams use identical cuts. Dual-view output uses the side view with a bottom-left wrist inset.",
+      "selection_basis": "Selected as the minimum final end-effector distance to the recorded goal pose among episodes with metadata.",
+      "excluded_non_task_intervals": [
+        {
+          "reason": "brief isolated non-task movement between recorded robot actions",
+          "intervals_frames_end_exclusive": [
+            [
+              1246,
+              1252
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "task": "Fruit",
+      "task_slug": "fruit",
+      "model": "Independent DINOv3",
+      "model_slug": "ind-dino",
+      "folder_model": "ind",
+      "timestamp": "2026-09-04_15-00-23",
+      "source_prefix": "episode_fruit",
+      "side_source": ".cache/hw_output/fruit/videos_fruit_ind/episode_fruit_2026-09-04_15-00-23_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/fruit/videos_fruit_ind/episode_fruit_2026-09-04_15-00-23_wrist_h264.mp4",
+      "side_source_sha256": "bd9d0e61d87c6aeae45fbdca9702ec6bcedd6bbc957ecf9bf833cc21e8610e2d",
+      "wrist_source_sha256": "1e42450bb8eeff17a8f2ff3ae728b83447f3ee100462f38734d7992bbf83e1c3",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 2039,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          101,
+          122
+        ],
+        [
+          213,
+          246
+        ],
+        [
+          337,
+          365
+        ],
+        [
+          457,
+          483
+        ],
+        [
+          576,
+          596
+        ],
+        [
+          689,
+          723
+        ],
+        [
+          817,
+          846
+        ],
+        [
+          940,
+          977
+        ],
+        [
+          1072,
+          1099
+        ],
+        [
+          1194,
+          1226
+        ],
+        [
+          1318,
+          1346
+        ],
+        [
+          1437,
+          1460
+        ],
+        [
+          1554,
+          1580
+        ],
+        [
+          1673,
+          1707
+        ],
+        [
+          1798,
+          1815
+        ],
+        [
+          1911,
+          1928
+        ],
+        [
+          2023,
+          2039
+        ]
+      ],
+      "retained_source_frames": 448,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 11.789473684210526,
+      "file": "result-hardware-fruit-ind-dino.mp4",
+      "poster": "result-hardware-fruit-ind-dino.jpg",
+      "view": "dual",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Side and wrist streams use identical cuts. Dual-view output uses the side view with a bottom-left wrist inset.",
+      "selection_basis": "Selected as the minimum final end-effector distance to the recorded goal pose among episodes with metadata."
+    },
+    {
+      "task": "Fruit",
+      "task_slug": "fruit",
+      "model": "Wrist-view DINOv3",
+      "model_slug": "wrist-dino",
+      "folder_model": "wrist",
+      "timestamp": "2026-09-04_16-16-10",
+      "source_prefix": "episode_fruit",
+      "side_source": ".cache/hw_output/fruit/videos_fruit_wrist/episode_fruit_2026-09-04_16-16-10_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/fruit/videos_fruit_wrist/episode_fruit_2026-09-04_16-16-10_wrist_h264.mp4",
+      "side_source_sha256": "abf728daada7c3b1531c745b09499e7d37695c92b9af47763db449e2bd782588",
+      "wrist_source_sha256": "e70e1f22bd4d3692e0b945b85c2846e18a4f9aa79b1a6e40127f17f4257582fd",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 1154,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          46,
+          79
+        ],
+        [
+          124,
+          149
+        ],
+        [
+          195,
+          218
+        ],
+        [
+          264,
+          280
+        ],
+        [
+          326,
+          350
+        ],
+        [
+          395,
+          417
+        ],
+        [
+          463,
+          485
+        ],
+        [
+          531,
+          559
+        ],
+        [
+          605,
+          616
+        ],
+        [
+          662,
+          704
+        ],
+        [
+          750,
+          787
+        ],
+        [
+          832,
+          856
+        ],
+        [
+          902,
+          926
+        ],
+        [
+          972,
+          992
+        ],
+        [
+          1037,
+          1070
+        ],
+        [
+          1116,
+          1154
+        ]
+      ],
+      "retained_source_frames": 422,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 11.105263157894738,
+      "file": "result-hardware-fruit-wrist-dino.mp4",
+      "poster": "result-hardware-fruit-wrist-dino.jpg",
+      "view": "wrist",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Wrist view only.",
+      "selection_basis": "Selected as the minimum final end-effector distance to the recorded goal pose among episodes with metadata."
+    },
+    {
+      "task": "Spoon",
+      "task_slug": "spoon",
+      "model": "DUET-DINO",
+      "model_slug": "duet",
+      "folder_model": "dual",
+      "timestamp": "2026-09-04_10-50-08",
+      "source_prefix": "episode_spoon",
+      "side_source": ".cache/hw_output/spoon/videos_spoon_dual/episode_spoon_2026-09-04_10-50-08_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/spoon/videos_spoon_dual/episode_spoon_2026-09-04_10-50-08_wrist_h264.mp4",
+      "side_source_sha256": "c0361f15538724a0522a411c16741f1d8f18ecf27cb71fa2bb85512fd5d8575b",
+      "wrist_source_sha256": "9ac8b2a4c889d3872397136a7c8d4b3eb538fac38b465a083333cbc720a3b0a5",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 1799,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          101,
+          122
+        ],
+        [
+          214,
+          245
+        ],
+        [
+          343,
+          364
+        ],
+        [
+          463,
+          482
+        ],
+        [
+          581,
+          604
+        ],
+        [
+          703,
+          725
+        ],
+        [
+          824,
+          842
+        ],
+        [
+          941,
+          974
+        ],
+        [
+          1072,
+          1094
+        ],
+        [
+          1189,
+          1219
+        ],
+        [
+          1317,
+          1340
+        ],
+        [
+          1440,
+          1461
+        ],
+        [
+          1560,
+          1577
+        ],
+        [
+          1677,
+          1694
+        ],
+        [
+          1793,
+          1799
+        ]
+      ],
+      "retained_source_frames": 324,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 8.526315789473685,
+      "file": "result-hardware-spoon-duet.mp4",
+      "poster": "result-hardware-spoon-duet.jpg",
+      "view": "dual",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Side and wrist streams use identical cuts. Dual-view output uses the side view with a bottom-left wrist inset.",
+      "selection_basis": "Selected as the minimum final end-effector distance to the recorded goal pose among episodes with metadata."
+    },
+    {
+      "task": "Spoon",
+      "task_slug": "spoon",
+      "model": "Independent DINOv3",
+      "model_slug": "ind-dino",
+      "folder_model": "ind",
+      "timestamp": "2026-09-04_11-21-41",
+      "source_prefix": "episode_spoon",
+      "side_source": ".cache/hw_output/spoon/videos_spoon_ind/episode_spoon_2026-09-04_11-21-41_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/spoon/videos_spoon_ind/episode_spoon_2026-09-04_11-21-41_wrist_h264.mp4",
+      "side_source_sha256": "ef608f2cf35a615821645d26f21f9c0da010f7f14e6d073d0bd384e969a53868",
+      "wrist_source_sha256": "502c400bffa0c9e8694e79aa92217d5434a1cbf7acc4c77b0eb8698e35dd925e",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 1743,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          101,
+          122
+        ],
+        [
+          214,
+          242
+        ],
+        [
+          335,
+          365
+        ],
+        [
+          459,
+          486
+        ],
+        [
+          579,
+          608
+        ],
+        [
+          701,
+          716
+        ],
+        [
+          811,
+          830
+        ],
+        [
+          925,
+          942
+        ],
+        [
+          1037,
+          1050
+        ],
+        [
+          1145,
+          1168
+        ],
+        [
+          1263,
+          1277
+        ],
+        [
+          1373,
+          1400
+        ],
+        [
+          1495,
+          1526
+        ],
+        [
+          1619,
+          1634
+        ],
+        [
+          1726,
+          1743
+        ]
+      ],
+      "retained_source_frames": 326,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 8.578947368421053,
+      "file": "result-hardware-spoon-ind-dino.mp4",
+      "poster": "result-hardware-spoon-ind-dino.jpg",
+      "view": "dual",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Side and wrist streams use identical cuts. Dual-view output uses the side view with a bottom-left wrist inset.",
+      "selection_basis": "Selected as the minimum final end-effector distance to the recorded goal pose among episodes with metadata."
+    },
+    {
+      "task": "Spoon",
+      "task_slug": "spoon",
+      "model": "Wrist-view DINOv3",
+      "model_slug": "wrist-dino",
+      "folder_model": "wrist",
+      "timestamp": "2026-09-04_12-36-30",
+      "source_prefix": "episode_spoon",
+      "side_source": ".cache/hw_output/spoon/videos_spoon_wrist/episode_spoon_2026-09-04_12-36-30_side_h264.mp4",
+      "wrist_source": ".cache/hw_output/spoon/videos_spoon_wrist/episode_spoon_2026-09-04_12-36-30_wrist_h264.mp4",
+      "side_source_sha256": "921763a09344733ff861752a2ce2e348b9552df9e84f6f2ef0927f2eb8a4a3d6",
+      "wrist_source_sha256": "26e72a6cd61db01766fed75bd1515525084da97f00676613425fe14426778118",
+      "motion_detection_view": "wrist",
+      "source_fps": 10,
+      "source_frame_count": 1079,
+      "motion_threshold_mean_abs_gray_64x36": 0.25,
+      "motion_intervals_frames_end_exclusive": [
+        [
+          46,
+          74
+        ],
+        [
+          115,
+          134
+        ],
+        [
+          178,
+          211
+        ],
+        [
+          258,
+          284
+        ],
+        [
+          330,
+          352
+        ],
+        [
+          394,
+          424
+        ],
+        [
+          470,
+          496
+        ],
+        [
+          538,
+          560
+        ],
+        [
+          606,
+          619
+        ],
+        [
+          667,
+          686
+        ],
+        [
+          730,
+          770
+        ],
+        [
+          814,
+          858
+        ],
+        [
+          904,
+          931
+        ],
+        [
+          977,
+          1005
+        ],
+        [
+          1052,
+          1079
+        ]
+      ],
+      "retained_source_frames": 404,
+      "speed_factor": 3.8,
+      "expected_output_duration_seconds": 10.631578947368421,
+      "file": "result-hardware-spoon-wrist-dino.mp4",
+      "poster": "result-hardware-spoon-wrist-dino.jpg",
+      "view": "wrist",
+      "processing": "Robot motion detected from the wrist stream to reject person-only movement in the side view. Stationary gaps longer than 0.3 seconds are removed; moving intervals are padded by 0.1 seconds, stitched, and played at 3.8x. Wrist view only.",
+      "selection_basis": "Selected as the minimum final end-effector distance to the recorded goal pose among episodes with metadata."
+    }
+  ]
+}
